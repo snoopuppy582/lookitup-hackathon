@@ -8,6 +8,33 @@ This repository contains the hackathon planning documents, generated figure refe
 select source pack -> search claim -> read Evidence Cards -> decide before publishing
 ```
 
+## Live Demo Script
+
+Show one workflow:
+
+```txt
+select Breaking News + Fact-Check Pack
+-> search the Kamchatka claim
+-> read Evidence Cards
+-> hold before publishing
+```
+
+The opening screen is intentionally narrow: one claim, one trusted source pack, one publication decision.
+
+## Pitch Deck
+
+HTML deck:
+
+```txt
+docs/pitch-deck.html
+```
+
+PDF export:
+
+```txt
+docs/lookitup-pitch-deck.pdf
+```
+
 ## Run Locally
 
 ```bash

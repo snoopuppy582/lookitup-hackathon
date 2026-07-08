@@ -2,25 +2,25 @@
 
 import {
   AlertTriangle,
-  ArrowRight,
   CheckCircle2,
-  Clock3,
-  Database,
   ExternalLink,
   FileText,
-  Globe2,
-  Newspaper,
+  RotateCcw,
   Search,
-  ShieldCheck
+  ShieldCheck,
+  TimerReset
 } from "lucide-react";
 import { FormEvent, useMemo, useState } from "react";
 import { sampleClaims, searchEvidence, sourcePacks, type EvidenceCard, type StatusType } from "@/lib/demo-data";
 
+const mainClaim = sampleClaims[0];
+const unsupportedClaim = sampleClaims[3];
+
 const statusLabels: Record<StatusType, string> = {
   evidence: "Evidence found",
-  mismatch: "Mismatch",
+  mismatch: "Mismatch found",
   "not-found": "Not found",
-  grouped: "Grouped evidence"
+  grouped: "Evidence grouped"
 };
 
 function getStatusClass(status: StatusType) {
@@ -37,25 +37,58 @@ function getStanceLabel(card: EvidenceCard) {
   return "Context";
 }
 
-export function LookitupDashboard() {
-  const [selectedPack, setSelectedPack] = useState(sourcePacks[0].id);
-  const [query, setQuery] = useState(sampleClaims[0]);
-  const [activeQuery, setActiveQuery] = useState(sampleClaims[0]);
-
-  const currentPack = useMemo(
-    () => sourcePacks.find((pack) => pack.id === selectedPack) ?? sourcePacks[0],
-    [selectedPack]
+function EvidenceCardView({ card, index }: { card: EvidenceCard; index: number }) {
+  return (
+    <article className="evidence-card">
+      <div className="card-index">Evidence {index + 1}</div>
+      <div className="card-source">
+        <FileText size={16} aria-hidden="true" />
+        <span>{card.source}</span>
+      </div>
+      <blockquote>{card.quote}</blockquote>
+      <div className="card-meta">
+        <span>{card.sourceType}</span>
+        <span>{card.date}</span>
+        <span>Score {card.score.toFixed(2)}</span>
+      </div>
+      <div className={`stance stance-${card.stance}`}>{getStanceLabel(card)}</div>
+      <a href={card.url} target="_blank" rel="noreferrer" className="open-source">
+        Open source
+        <ExternalLink size={14} aria-hidden="true" />
+      </a>
+    </article>
   );
+}
+
+export function LookitupDashboard() {
+  const sourcePack = sourcePacks[0];
+  const [query, setQuery] = useState(mainClaim);
+  const [activeQuery, setActiveQuery] = useState(mainClaim);
+  const [hasSearched, setHasSearched] = useState(false);
+
   const result = useMemo(() => searchEvidence(activeQuery), [activeQuery]);
+
+  function runSearch(nextQuery = query) {
+    const cleanQuery = nextQuery.trim() || mainClaim;
+    setQuery(cleanQuery);
+    setActiveQuery(cleanQuery);
+    setHasSearched(true);
+  }
 
   function handleSearch(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    setActiveQuery(query.trim() || sampleClaims[0]);
+    runSearch();
+  }
+
+  function resetDemo() {
+    setQuery(mainClaim);
+    setActiveQuery(mainClaim);
+    setHasSearched(false);
   }
 
   return (
     <main className="app-shell">
-      <header className="topbar" aria-label="Lookitup overview">
+      <header className="topbar" aria-label="Lookitup product header">
         <div className="brand-block">
           <div className="brand-mark" aria-hidden="true">
             <ShieldCheck size={22} />
@@ -65,194 +98,132 @@ export function LookitupDashboard() {
             <h1>Lookitup</h1>
           </div>
         </div>
-        <div className="topbar-copy">
-          <strong>Evidence before publication.</strong>
-          <span>Trusted-source claim search for journalists.</span>
-        </div>
-        <div className="topbar-actions">
-          <span className="mode-chip">Demo mode</span>
-          <a className="source-link" href="#build-boundary">
-            Build scope
-          </a>
-        </div>
+        <div className="tagline">Turn doubt into evidence before publishing.</div>
+        <div className="demo-badge">Live demo</div>
       </header>
 
-      <section className="hero-strip" aria-label="Main demo claim">
-        <div>
-          <p className="eyebrow">Main demo</p>
-          <h2>Stop unverified claims before they become news.</h2>
+      <section className="stage-hero" aria-label="Live demo opening">
+        <div className="hero-copy">
+          <p className="eyebrow">30-second prototype story</p>
+          <h2>Before publishing, check the claim against trusted sources.</h2>
+          <p>One doubtful claim enters. Source-bound Evidence Cards come out.</p>
         </div>
-        <p>
-          A journalist selects a trusted source pack, searches the Kamchatka claim, and sees Evidence Cards before
-          publishing.
-        </p>
+
+        <ol className="demo-steps" aria-label="Demo steps">
+          <li>
+            <span>1</span>
+            Select source pack
+          </li>
+          <li>
+            <span>2</span>
+            Search claim
+          </li>
+          <li>
+            <span>3</span>
+            Read evidence
+          </li>
+        </ol>
       </section>
 
-      <section className="workspace" aria-label="Lookitup demo workspace">
-        <aside className="source-rail" aria-label="Trusted source packs">
-          <div className="section-heading">
-            <Database size={18} />
-            <span>Trusted Source Packs</span>
-          </div>
+      <section className="demo-frame" aria-label="Source-bound claim verification demo">
+        <aside className="source-boundary" aria-label="Selected trusted source pack">
+          <p className="panel-label">1. Trusted source pack</p>
+          <h3>{sourcePack.name}</h3>
+          <p className="boundary-copy">The newsroom chooses the search boundary before the deadline.</p>
 
-          <div className="pack-list">
-            {sourcePacks.map((pack) => (
-              <button
-                key={pack.id}
-                className={`pack-button ${pack.id === selectedPack ? "active" : ""}`}
-                onClick={() => setSelectedPack(pack.id)}
-                type="button"
-              >
-                <span className="pack-title">{pack.name}</span>
-                <span className="pack-description">{pack.description}</span>
-                <span className="pack-status">{pack.status}</span>
-              </button>
-            ))}
-          </div>
-
-          <div className="source-list" aria-label="Sources in selected pack">
-            <p className="label">Sources in pack</p>
-            {currentPack.sources.map((source) => (
+          <div className="source-list">
+            {sourcePack.sources.map((source) => (
               <span key={source}>
-                <CheckCircle2 size={14} />
+                <CheckCircle2 size={15} aria-hidden="true" />
                 {source}
               </span>
             ))}
           </div>
         </aside>
 
-        <section className="search-surface" aria-label="Claim search and evidence cards">
+        <section className="claim-workbench" aria-label="Claim search and evidence cards">
           <form className="claim-search" onSubmit={handleSearch}>
-            <label htmlFor="claim">Claim or subject</label>
-            <div className="search-row">
-              <Search size={20} aria-hidden="true" />
-              <textarea
-                id="claim"
-                value={query}
-                onChange={(event) => setQuery(event.target.value)}
-                placeholder="Enter a claim before publication"
-                rows={2}
-              />
-              <button type="submit">Search</button>
+            <label htmlFor="claim">2. Claim before publication</label>
+            <textarea
+              id="claim"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              rows={3}
+              placeholder="Enter one doubtful claim"
+            />
+            <div className="action-row">
+              <button type="submit" className="primary-action">
+                <Search size={18} aria-hidden="true" />
+                Search trusted sources
+              </button>
+              <button type="button" className="secondary-action" onClick={() => runSearch(unsupportedClaim)}>
+                Try unsupported claim
+              </button>
+              <button type="button" className="icon-action" onClick={resetDemo} aria-label="Reset demo">
+                <RotateCcw size={17} aria-hidden="true" />
+              </button>
             </div>
           </form>
 
-          <div className="sample-claims" aria-label="Demo claim shortcuts">
-            {sampleClaims.map((claim) => (
-              <button
-                key={claim}
-                type="button"
-                onClick={() => {
-                  setQuery(claim);
-                  setActiveQuery(claim);
-                }}
-              >
-                {claim}
-              </button>
-            ))}
-          </div>
-
-          <div className="result-banner">
-            <div>
-              <span className={getStatusClass(result.status)}>{statusLabels[result.status]}</span>
-              <h3>{result.line}</h3>
+          {!hasSearched ? (
+            <div className="ready-state">
+              <TimerReset size={32} aria-hidden="true" />
+              <h3>Ready for the live search.</h3>
+              <p>Click Search trusted sources. The demo should move from claim to evidence in seconds.</p>
             </div>
-            <div className="score-block">
-              <span>Decision</span>
-              <strong>{result.decision}</strong>
-            </div>
-          </div>
-
-          <div className="evidence-grid" aria-label="Evidence Cards">
-            {result.cards.length > 0 ? (
-              result.cards.map((card) => (
-                <article className="evidence-card" key={card.id}>
-                  <div className="card-topline">
-                    <span className="card-source">
-                      <FileText size={16} />
-                      {card.source}
-                    </span>
-                    <span className={`stance stance-${card.stance}`}>{getStanceLabel(card)}</span>
-                  </div>
-                  <blockquote>{card.quote}</blockquote>
-                  <div className="card-meta">
-                    <span>{card.sourceType}</span>
-                    <span>{card.date}</span>
-                    <span>Score {card.score.toFixed(2)}</span>
-                  </div>
-                  <div className="tag-row">
-                    {card.tags.map((tag) => (
-                      <span key={tag}>{tag}</span>
-                    ))}
-                  </div>
-                  <a href={card.url} target="_blank" rel="noreferrer" className="open-source">
-                    Open source
-                    <ExternalLink size={14} />
-                  </a>
-                </article>
-              ))
-            ) : (
-              <div className="empty-state">
-                <AlertTriangle size={28} />
-                <h3>Not found in trusted sources.</h3>
-                <p>The selected source pack currently lacks support for this claim.</p>
+          ) : (
+            <section className="result-zone" aria-label="Search result">
+              <div className="result-banner">
+                <span className={getStatusClass(result.status)}>{statusLabels[result.status]}</span>
+                <h3>{result.line}</h3>
               </div>
-            )}
-          </div>
+
+              {result.cards.length > 0 ? (
+                <div className="evidence-grid" aria-label="Evidence Cards">
+                  {result.cards.map((card, index) => (
+                    <EvidenceCardView card={card} index={index} key={card.id} />
+                  ))}
+                </div>
+              ) : (
+                <div className="empty-state">
+                  <AlertTriangle size={30} aria-hidden="true" />
+                  <h3>Not found in trusted sources.</h3>
+                  <p>The selected source pack currently lacks support for this claim.</p>
+                </div>
+              )}
+            </section>
+          )}
         </section>
 
-        <aside className="decision-panel" aria-label="Publication decision">
-          <div className="section-heading">
-            <Newspaper size={18} />
-            <span>Publication Decision</span>
-          </div>
-
-          <div className="decision-status">
-            <span className={getRiskClass(result.risk)}>{result.risk}</span>
-            <h3>{result.decision}</h3>
-            <p>{result.title}</p>
-          </div>
-
-          <div className="timeline">
-            <p className="label">Evidence trail</p>
-            {result.timeline.map((item, index) => (
-              <div className="timeline-row" key={item}>
-                <span>{index + 1}</span>
-                <p>{item}</p>
+        <aside className="publication-call" aria-label="Publication decision">
+          <p className="panel-label">3. Publication call</p>
+          {hasSearched ? (
+            <>
+              <span className={getRiskClass(result.risk)}>{result.risk}</span>
+              <h3>{result.decision}</h3>
+              <p>{result.title}</p>
+              <div className="trail">
+                {result.timeline.map((item, index) => (
+                  <div className="trail-row" key={item}>
+                    <span>{index + 1}</span>
+                    <p>{item}</p>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-
-          <div className="demo-script">
-            <p className="label">Stage line</p>
-            <strong>One source pack. One claim. Visible evidence.</strong>
-            <p>Lookitup turns doubt into evidence before publication.</p>
-          </div>
+            </>
+          ) : (
+            <>
+              <span className="risk risk-review">Ready</span>
+              <h3>Wait for evidence.</h3>
+              <p>The journalist makes the publication call after the Evidence Cards appear.</p>
+            </>
+          )}
         </aside>
       </section>
 
-      <section className="build-boundary" id="build-boundary" aria-label="Build boundary">
-        <div>
-          <p className="eyebrow">Built for real</p>
-          <h3>Source-pack search, Evidence Cards, source links, not-found state.</h3>
-        </div>
-        <ArrowRight aria-hidden="true" />
-        <div>
-          <p className="eyebrow">Mocked in pitch</p>
-          <h3>Cited summaries, editor review, export packs, image and video provenance.</h3>
-        </div>
-        <div className="clock-note">
-          <Clock3 size={18} />
-          <span>Demo must work offline from local data.</span>
-        </div>
-      </section>
-
-      <section className="reference-strip" aria-label="Figure references">
-        <div>
-          <Globe2 size={18} />
-          <span>Figure package ready</span>
-        </div>
-        <p>Use generated figures in `assets/figures` as visual anchors for the hand-made pitch deck.</p>
+      <section className="stage-line" aria-label="Presenter line">
+        <strong>Stage line:</strong>
+        <span>Lookitup searches the trusted source pack, returns Evidence Cards, and supports the human publication decision.</span>
       </section>
     </main>
   );

@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lookitup Pitch Deck</title>
+    <style>
+      :root {
+        --ink: #0d1117;
+        --muted: #5b6472;
+        --border: #d8dee8;
+        --canvas: #f4f6f8;
+        --surface: #ffffff;
+        --blue: #1557ff;
+        --blue-soft: #edf3ff;
+        --red: #d92d20;
+        --red-soft: #fff1f0;
+        --green: #067647;
+        --green-soft: #e9f8ef;
+        --amber: #b7791f;
+        --amber-soft: #fff7e6;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        background: var(--canvas);
+        color: var(--ink);
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 0;
+        overflow-x: hidden;
+      }
+
+      body {
+        display: grid;
+        gap: 0;
+        padding: 0;
+      }
+
+      .slide {
+        position: relative;
+        display: grid;
+        width: 1600px;
+        height: 900px;
+        overflow: hidden;
+        padding: 62px;
+        margin: 0 auto 18px;
+        border: 1px solid var(--border);
+        background: var(--surface);
+        page-break-after: always;
+      }
+
+      .slide.dark {
+        color: #ffffff;
+        background: var(--ink);
+      }
+
+      .slide.dark .eyebrow,
+      .slide.dark .caption,
+      .slide.dark .small {
+        color: #bcc6d5;
+      }
+
+      .eyebrow {
+        margin: 0 0 12px;
+        color: var(--blue);
+        font-size: 22px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        max-width: 1220px;
+        margin-bottom: 28px;
+        font-size: 94px;
+        line-height: 0.98;
+      }
+
+      h2 {
+        max-width: 1120px;
+        margin-bottom: 24px;
+        font-size: 64px;
+        line-height: 1.03;
+      }
+
+      h3 {
+        margin-bottom: 10px;
+        font-size: 30px;
+        line-height: 1.15;
+      }
+
+      .lead {
+        max-width: 920px;
+        color: var(--muted);
+        font-size: 30px;
+        line-height: 1.3;
+      }
+
+      .dark .lead {
+        color: #dce3ef;
+      }
+
+      .brand {
+        position: absolute;
+        left: 62px;
+        bottom: 46px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-size: 24px;
+        font-weight: 900;
+      }
+
+      .mark {
+        display: grid;
+        place-items: center;
+        width: 48px;
+        height: 48px;
+        color: #ffffff;
+        background: var(--blue);
+        border-radius: 8px;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: 0.92fr 1.08fr;
+        gap: 46px;
+        align-items: center;
+      }
+
+      .visual {
+        width: 100%;
+        max-height: 640px;
+        object-fit: contain;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: #ffffff;
+      }
+
+      .quote-grid,
+      .stat-grid,
+      .loop-grid,
+      .roadmap-grid {
+        display: grid;
+        gap: 18px;
+      }
+
+      .quote-card,
+      .stat-card,
+      .loop-card,
+      .evidence-card,
+      .roadmap-card,
+      .team-card {
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: #ffffff;
+      }
+
+      .quote-card {
+        padding: 28px;
+      }
+
+      .quote-card strong {
+        display: block;
+        margin-bottom: 10px;
+        color: var(--blue);
+        font-size: 34px;
+      }
+
+      .quote-card span {
+        color: var(--muted);
+        font-size: 22px;
+        font-weight: 800;
+      }
+
+      .stat-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .stat-card {
+        min-height: 210px;
+        padding: 26px;
+      }
+
+      .stat-card strong {
+        display: block;
+        margin-bottom: 14px;
+        color: var(--blue);
+        font-size: 58px;
+        line-height: 1;
+      }
+
+      .stat-card span {
+        color: var(--muted);
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 1.25;
+      }
+
+      .loop-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .loop-card {
+        min-height: 250px;
+        padding: 28px;
+      }
+
+      .loop-number {
+        display: grid;
+        place-items: center;
+        width: 56px;
+        height: 56px;
+        margin-bottom: 20px;
+        color: #ffffff;
+        background: var(--blue);
+        border-radius: 8px;
+        font-size: 26px;
+        font-weight: 900;
+      }
+
+      .demo-window {
+        display: grid;
+        grid-template-columns: 360px 1fr;
+        gap: 18px;
+        min-height: 560px;
+        padding: 20px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: var(--canvas);
+      }
+
+      .source-pack,
+      .claim-box {
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: #ffffff;
+        padding: 24px;
+      }
+
+      .source-pack p,
+      .claim-box p,
+      .caption,
+      .small {
+        color: var(--muted);
+        line-height: 1.35;
+      }
+
+      .claim-text {
+        margin: 18px 0;
+        padding: 18px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: #fbfcff;
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 1.22;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        min-height: 48px;
+        padding: 0 18px;
+        color: #ffffff;
+        background: var(--blue);
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: 900;
+      }
+
+      .evidence-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        margin-top: 28px;
+      }
+
+      .evidence-card {
+        min-height: 280px;
+        padding: 22px;
+      }
+
+      .badge {
+        display: inline-flex;
+        width: fit-content;
+        min-height: 30px;
+        align-items: center;
+        padding: 0 10px;
+        border-radius: 999px;
+        font-size: 14px;
+        font-weight: 900;
+      }
+
+      .badge.red {
+        color: var(--red);
+        background: var(--red-soft);
+      }
+
+      .badge.green {
+        color: var(--green);
+        background: var(--green-soft);
+      }
+
+      .badge.amber {
+        color: var(--amber);
+        background: var(--amber-soft);
+      }
+
+      .evidence-card blockquote {
+        margin: 18px 0;
+        font-size: 25px;
+        font-weight: 900;
+        line-height: 1.24;
+      }
+
+      .architecture {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 14px;
+        align-items: center;
+      }
+
+      .arch-step {
+        min-height: 160px;
+        padding: 20px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: #ffffff;
+      }
+
+      .arch-step strong {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--blue);
+        font-size: 22px;
+      }
+
+      .roadmap-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .roadmap-card {
+        min-height: 300px;
+        padding: 24px;
+      }
+
+      .roadmap-card strong {
+        display: block;
+        margin-bottom: 18px;
+        color: var(--blue);
+        font-size: 30px;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 22px;
+        color: var(--muted);
+        font-size: 23px;
+        font-weight: 800;
+        line-height: 1.45;
+      }
+
+      .team-card {
+        position: absolute;
+        right: 62px;
+        bottom: 46px;
+        width: 600px;
+        padding: 22px;
+      }
+
+      .team-card p {
+        margin-bottom: 0;
+        color: var(--muted);
+        font-size: 21px;
+        font-weight: 800;
+      }
+
+      .footer-line {
+        position: absolute;
+        left: 62px;
+        right: 62px;
+        bottom: 42px;
+        display: flex;
+        justify-content: space-between;
+        color: var(--muted);
+        font-size: 18px;
+        font-weight: 800;
+      }
+
+      @page {
+        size: 16in 9in;
+        margin: 0;
+      }
+
+      @media print {
+        body {
+          display: block;
+          padding: 0;
+          background: #ffffff;
+        }
+
+        .slide {
+          width: 16in;
+          height: 9in;
+          border: 0;
+          box-shadow: none;
+        }
+      }
+
+      @media screen {
+        .slide {
+          width: min(1600px, calc(100vw - 18px));
+          height: auto;
+          aspect-ratio: 16 / 9;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="slide dark">
+      <p class="eyebrow">Lookitup</p>
+      <h1>Turn doubt into evidence before publishing.</h1>
+      <p class="lead">A trusted-source evidence workspace for journalists before publication.</p>
+      <div class="brand"><span class="mark">L</span> Team 6 · Korea + France</div>
+    </section>
+
+    <section class="slide two-col">
+      <div>
+        <p class="eyebrow">Problem case</p>
+        <h2>A fake visual became news before evidence caught up.</h2>
+        <p class="lead">
+          The Kamchatka snow story shows the failure: a vivid AI-generated claim crossed platforms and newsrooms before
+          the evidence trail was checked.
+        </p>
+      </div>
+      <img class="visual" src="../assets/figures/figure-01-cross-border-fake-visual.png" alt="Cross-border fake visual flow" />
+    </section>
+
+    <section class="slide">
+      <p class="eyebrow">Journalist pressure</p>
+      <h2>The deadline is five minutes. The standard is 100%.</h2>
+      <div class="quote-grid">
+        <div class="quote-card"><strong>"maximum five minutes"</strong><span>Helena Pilar Gisbert, AFP</span></div>
+        <div class="quote-card"><strong>"15 minutes"</strong><span>Helena Pilar Gisbert, AFP</span></div>
+        <div class="quote-card"><strong>"clients absolutely trust us 100%"</strong><span>Helena Pilar Gisbert, AFP</span></div>
+      </div>
+      <div class="footer-line"><span>Named panel evidence</span><span>AFP · ARTE · RSF</span></div>
+    </section>
+
+    <section class="slide">
+      <p class="eyebrow">Source gap</p>
+      <h2>News moves faster than source control.</h2>
+      <div class="stat-grid">
+        <div class="stat-card"><strong>10%</strong><span>global AI chatbot news use in Reuters Institute 2026</span></div>
+        <div class="stat-card"><strong>16%</strong><span>under-35 AI chatbot news use</span></div>
+        <div class="stat-card"><strong>31%</strong><span>AI assistant news answers with serious sourcing problems in EBU/BBC study</span></div>
+      </div>
+      <p class="lead" style="margin-top: 42px;">The newsroom needs a visible source boundary before publication.</p>
+    </section>
+
+    <section class="slide two-col">
+      <div>
+        <p class="eyebrow">Solution</p>
+        <h2>Lookitup turns trusted sources into a claim-checking workspace.</h2>
+        <p class="lead">The product does one thing on stage: it finds source-bound Evidence Cards for one doubtful claim.</p>
+      </div>
+      <img class="visual" src="../assets/figures/figure-04-core-loop.png" alt="Lookitup core loop" />
+    </section>
+
+    <section class="slide">
+      <p class="eyebrow">Live demo</p>
+      <h2>One claim moves through one source boundary.</h2>
+      <div class="demo-window">
+        <div class="source-pack">
+          <h3>Breaking News + Fact-Check Pack</h3>
+          <p>OhmyNews Fact Check<br />OhmyNews follow-up<br />AFP Fact Check<br />Local fallback corpus</p>
+        </div>
+        <div class="claim-box">
+          <h3>Claim before publication</h3>
+          <div class="claim-text">Kamchatka snow reached the height of a 10-story apartment building.</div>
+          <div class="button">Search trusted sources</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <p class="eyebrow">Demo result</p>
+      <h2>Evidence Cards turn the claim into a publication decision.</h2>
+      <div class="evidence-grid">
+        <div class="evidence-card">
+          <span class="badge red">Contradicts claim</span>
+          <blockquote>Korean media reported AI-manipulated Kamchatka snow visuals as real.</blockquote>
+          <p class="caption">OhmyNews Fact Check · Jan. 22, 2026</p>
+        </div>
+        <div class="evidence-card">
+          <span class="badge amber">Context</span>
+          <blockquote>KBS and MBC later deleted related AI snow videos.</blockquote>
+          <p class="caption">OhmyNews follow-up · Jan. 23, 2026</p>
+        </div>
+        <div class="evidence-card">
+          <span class="badge red">Contradicts claim</span>
+          <blockquote>Massive Kamchatka snow footage circulating online was AI-generated.</blockquote>
+          <p class="caption">AFP Fact Check · Jan. 29, 2026</p>
+        </div>
+      </div>
+      <p class="lead" style="margin-top: 34px;">Decision: Hold before publishing.</p>
+    </section>
+
+    <section class="slide">
+      <p class="eyebrow">Technical core</p>
+      <h2>The technical decision is constraint.</h2>
+      <div class="architecture">
+        <div class="arch-step"><strong>Source pack</strong><span class="small">trusted boundary</span></div>
+        <div class="arch-step"><strong>Local corpus</strong><span class="small">demo reliability</span></div>
+        <div class="arch-step"><strong>Claim search</strong><span class="small">one doubtful sentence</span></div>
+        <div class="arch-step"><strong>Evidence Cards</strong><span class="small">quote, source, date, link</span></div>
+        <div class="arch-step"><strong>Decision</strong><span class="small">human publication call</span></div>
+      </div>
+      <p class="lead" style="margin-top: 42px;">P0 works without generation. Future AI summaries must cite retrieved Evidence Cards.</p>
+    </section>
+
+    <section class="slide">
+      <p class="eyebrow">KPI and roadmap</p>
+      <h2>Measure the loop by time-to-evidence.</h2>
+      <div class="roadmap-grid">
+        <div class="roadmap-card"><strong>48h</strong><ul><li>source packs</li><li>local search</li><li>Evidence Cards</li></ul></div>
+        <div class="roadmap-card"><strong>1 month</strong><ul><li>saved packs</li><li>URL/RSS</li><li>PDF support</li></ul></div>
+        <div class="roadmap-card"><strong>3 months</strong><ul><li>newsroom pilot</li><li>editor review</li><li>KPI test</li></ul></div>
+        <div class="roadmap-card"><strong>6 months</strong><ul><li>multilingual packs</li><li>image provenance</li><li>video workflow</li></ul></div>
+      </div>
+    </section>
+
+    <section class="slide dark">
+      <p class="eyebrow">Close</p>
+      <h1>Lookitup stops unverified claims before they become published news.</h1>
+      <p class="lead">One claim. One trusted source pack. Visible Evidence Cards.</p>
+      <div class="team-card">
+        <h3>Team 6 · Korea + France</h3>
+        <p>Moon Geonho · Oh Sowon · So Chanyoung · Lucas Boucher</p>
+      </div>
+    </section>
+  </body>
+</html>

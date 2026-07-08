@@ -2,86 +2,78 @@
 
 ## Product Shape
 
-Lookitup is a newsroom evidence workspace.
+Lookitup is a pre-publication evidence check.
 
-The first screen opens as the product dashboard:
+The first screen must teach one live demo:
 
-> select source pack -> search claim -> read Evidence Cards -> decide before publishing
-
-## OpenDesign Source
-
-This contract follows the Open Design workflow: a project-local `DESIGN.md` acts as the brand and interface contract for generated or hand-coded artifacts.
-
-Reference checked:
-
-- `nexu-io/open-design`
-- Open Design `QUICKSTART.md`
-- Open Design web prototype and design-system guidance
+> select source pack -> search one claim -> read Evidence Cards -> make the publication call
 
 ## Audience
 
+Primary viewer:
+
+- hackathon judge watching a 5-minute presentation
+
 Primary user:
 
-- journalist or editor checking a doubtful claim before publication
-
-Secondary viewers:
-
-- hackathon judges
-- newsroom mentors
-- presentation audience
+- journalist or editor checking one doubtful claim before publication
 
 ## Interface Principle
 
-Evidence first. Summary second. Human publication decision last.
+One claim. One source boundary. Visible evidence.
 
 ## Layout
 
-Use a dense but readable newsroom dashboard.
+The product screen must show the 30-second demo path.
 
 Required zones:
 
-1. left source-pack rail
-2. central claim search and Evidence Cards
-3. right publication decision panel
-4. bottom demo script and build-boundary strip
+1. short product header with tagline
+2. three visible demo steps
+3. selected trusted source pack
+4. claim search box
+5. Evidence Cards after search
+6. publication decision panel
 
-Do not make a marketing hero.
+Remove generic dashboard sections from the first screen.
 
 ## Visual System
 
 Palette:
 
-- canvas: `#f5f7fb`
+- canvas: `#f4f6f8`
 - surface: `#ffffff`
-- ink: `#101217`
-- secondary text: `#667085`
-- border: `#d9dee8`
-- cobalt evidence: `#1557ff`
-- signal red: `#df2d2d`
+- ink: `#0d1117`
+- secondary text: `#5b6472`
+- border: `#d8dee8`
+- evidence blue: `#1557ff`
+- mismatch red: `#d92d20`
 - review amber: `#b7791f`
-- success green: `#0f8f5f`
+- verified green: `#067647`
 
 Typography:
 
 - use system sans-serif
+- use large type only for the demo claim and main presentation claim
 - keep labels short
-- keep body text scannable
-- no decorative typography
+- keep all button text action-oriented
 
 Components:
 
 - cards use `8px` radius or less
-- controls keep stable dimensions
 - icons from lucide-react
 - status chips carry meaning by color and text
 - no nested decorative cards
+- no marketing hero
+- no figure package or roadmap text on the product screen
 
 ## Copy Rules
 
-Use short, direct product language:
+Use direct product language:
 
-- "Evidence found"
-- "Mismatch"
+- "Search trusted sources"
+- "Evidence Cards"
+- "Mismatch found"
 - "Not found in trusted sources"
 - "Hold before publishing"
 - "Open source"
@@ -90,9 +82,9 @@ Avoid:
 
 - "maybe"
 - "we think"
-- "this is not"
-- long self-explanations
+- long explanations
 - generic AI-product phrases
+- build-scope details on the live demo screen
 
 ## Demo Defaults
 
@@ -104,14 +96,21 @@ Default claim:
 
 - `Kamchatka snow reached the height of a 10-story apartment building.`
 
-Default status:
+Default result:
 
 - `Trusted sources say: AI-generated visuals spread online. Claim says: 10-story snow was real.`
-
-Backup claim:
-
-- `Emmanuel Macron is the Vice President of France.`
 
 Not-found claim:
 
 - `Samsung acquired OpenAI in 2025.`
+
+## Presentation Deck
+
+The HTML deck and PDF must use the same claim hierarchy:
+
+1. fake visual became news
+2. journalists work under five-minute pressure
+3. source control is the gap
+4. Lookitup creates the source boundary
+5. the live demo proves the loop
+6. the roadmap grows the loop into a newsroom workspace
