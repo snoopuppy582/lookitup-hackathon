@@ -4,6 +4,12 @@
 
 GitHub CLI is authenticated as `snoopuppy582`.
 
+Repository:
+
+```txt
+https://github.com/snoopuppy582/lookitup-hackathon
+```
+
 Vercel CLI is installed. Login is missing in this environment.
 
 ## Local Verification
@@ -16,19 +22,20 @@ npm run build
 
 ## GitHub
 
-Recommended repository name:
+Repository:
 
 ```txt
-lookitup-hackathon
+https://github.com/snoopuppy582/lookitup-hackathon
 ```
 
-Create and push:
+The first commit has already been pushed.
+
+Future push:
 
 ```bash
-git init
 git add .
-git commit -m "Build Lookitup prototype"
-gh repo create lookitup-hackathon --public --source=. --remote=origin --push
+git commit -m "Update Lookitup prototype"
+git push
 ```
 
 ## Vercel
@@ -44,6 +51,12 @@ Deploy after Vercel login:
 ```bash
 vercel login
 vercel --prod
+```
+
+Import from GitHub:
+
+```txt
+https://vercel.com/new/clone?repository-url=https://github.com/snoopuppy582/lookitup-hackathon
 ```
 
 Token-based deploy:

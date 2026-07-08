@@ -28,6 +28,23 @@ npm run typecheck
 npm run build
 ```
 
+## Source Code
+
+https://github.com/snoopuppy582/lookitup-hackathon
+
+## Deploy
+
+Vercel import:
+
+https://vercel.com/new/clone?repository-url=https://github.com/snoopuppy582/lookitup-hackathon
+
+CLI deploy after login:
+
+```bash
+vercel login
+vercel --prod
+```
+
 ## Demo Claims
 
 - `Kamchatka snow reached the height of a 10-story apartment building.`
