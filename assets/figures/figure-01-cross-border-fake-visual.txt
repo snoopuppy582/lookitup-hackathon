@@ -1,16 +1,15 @@
 Figure: Cross-border fake visual flow
 File: figure-01-cross-border-fake-visual.png
 Use in deck: Slide 1 cold open
-One-sentence explanation: AI-generated Kamchatka snow visuals crossed platforms and newsrooms before evidence caught up.
+One-sentence explanation: A claim reached publication before the evidence caught up.
 Caption: A claim reached publication before the evidence caught up.
 Speaking note: This is the failure Lookitup targets: the story moved from social media to public news before the evidence trail was visible.
 
-Prompt used:
-Use case: infographic-diagram
-Asset type: Google Slides figure reference, 16:9 landscape, high-resolution
-Primary request: Create a clean editorial-tech infographic figure for Lookitup. It must show a cross-border verification failure with only the specified text labels.
-Text: "Fake visual becomes news", "Social post", "Korean media", "Fact-check correction", "Evidence before publication", "A claim reached publication before the evidence caught up."
-Visual content: Four large cards connected by arrows: social post, newsroom article, fact-check card, Evidence Cards.
-Style: premium journalism technology infographic, crisp vector-like layout, professional newsroom aesthetic.
-Colors: white, black, cobalt blue, light gray, small signal red highlight.
-Constraints: no logos, no watermark, readable from a presentation slide.
+Regeneration method:
+Deterministic SVG figure rendered to PNG with Chrome headless.
+
+Visual system:
+16:9 landscape, white cards on #f4f6f8 canvas, #0d1117 text, #1557ff evidence blue, #d92d20 mismatch red, #b7791f review amber, #067647 verified green, #d8dee8 borders, one consistent soft shadow.
+
+Reason:
+Text-heavy pitch figures need exact wording and consistent colors. SVG-to-PNG rendering keeps typography, spacing, and shading aligned across the full figure set.

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#0d1117" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="10" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#1557ff" />
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="#f4f6f8" />
+  <rect x="54" y="42" width="1492" height="88" rx="18" fill="#ffffff" stroke="#d8dee8" />
+  <text x="86" y="82" font-size="18" font-weight="900" fill="#1557ff" font-family="Arial, Helvetica, sans-serif">LOOKITUP FIGURE 04</text>
+  <text x="86" y="111" font-size="28" font-weight="900" fill="#0d1117" font-family="Arial, Helvetica, sans-serif">One source pack. One claim. Visible evidence.</text>
+  <text x="1040" y="95" font-size="20" font-weight="800" fill="#5b6472" font-family="Arial, Helvetica, sans-serif">MVP loop</text>
+  
+      
+    <rect x="110" y="250" width="300" height="270" rx="18" fill="#ffffff" stroke="#d8dee8" filter="url(#shadow)" />
+    <rect x="110" y="250" width="8" height="270" rx="4" fill="#1557ff" />
+    <text x="138" y="306" font-size="30" font-weight="900" fill="#0d1117" font-family="Arial, Helvetica, sans-serif"><tspan x="138" dy="0">1. Select</tspan><tspan x="138" dy="35.4">Source Pack</tspan></text>
+    <text x="138" y="397.4" font-size="24" font-weight="700" fill="#5b6472" font-family="Arial, Helvetica, sans-serif"><tspan x="138" dy="0">Breaking News +</tspan><tspan x="138" dy="30">Fact-Check Pack</tspan></text>
+  
+      
+    <rect x="470" y="250" width="300" height="270" rx="18" fill="#ffffff" stroke="#d8dee8" filter="url(#shadow)" />
+    <rect x="470" y="250" width="8" height="270" rx="4" fill="#1557ff" />
+    <text x="498" y="306" font-size="30" font-weight="900" fill="#0d1117" font-family="Arial, Helvetica, sans-serif"><tspan x="498" dy="0">2. Search Claim</tspan></text>
+    <text x="498" y="397.4" font-size="24" font-weight="700" fill="#5b6472" font-family="Arial, Helvetica, sans-serif"><tspan x="498" dy="0">Kamchatka snow</tspan><tspan x="498" dy="30">reached the height</tspan><tspan x="498" dy="30">of a 10-story</tspan><tspan x="498" dy="30">apartment</tspan><tspan x="498" dy="30">building.</tspan></text>
+  
+      
+    <rect x="830" y="250" width="300" height="270" rx="18" fill="#ffffff" stroke="#d8dee8" filter="url(#shadow)" />
+    <rect x="830" y="250" width="8" height="270" rx="4" fill="#067647" />
+    <text x="858" y="306" font-size="30" font-weight="900" fill="#0d1117" font-family="Arial, Helvetica, sans-serif"><tspan x="858" dy="0">3. Evidence</tspan><tspan x="858" dy="35.4">Cards</tspan></text>
+    <text x="858" y="397.4" font-size="24" font-weight="700" fill="#5b6472" font-family="Arial, Helvetica, sans-serif"><tspan x="858" dy="0">Quote, source,</tspan><tspan x="858" dy="30">date, URL, ranking</tspan><tspan x="858" dy="30">score.</tspan></text>
+  
+      
+    <rect x="1190" y="250" width="300" height="270" rx="18" fill="#ffffff" stroke="#d8dee8" filter="url(#shadow)" />
+    <rect x="1190" y="250" width="8" height="270" rx="4" fill="#b7791f" />
+    <text x="1218" y="306" font-size="30" font-weight="900" fill="#0d1117" font-family="Arial, Helvetica, sans-serif"><tspan x="1218" dy="0">4. Publish</tspan><tspan x="1218" dy="35.4">Decision</tspan></text>
+    <text x="1218" y="397.4" font-size="24" font-weight="700" fill="#5b6472" font-family="Arial, Helvetica, sans-serif"><tspan x="1218" dy="0">Hold, rewrite, or</tspan><tspan x="1218" dy="30">continue</tspan><tspan x="1218" dy="30">reporting.</tspan></text>
+  
+      <line x1="422" y1="385" x2="455" y2="385" stroke="#1557ff" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)" />
+      <line x1="782" y1="385" x2="815" y2="385" stroke="#1557ff" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)" />
+      <line x1="1142" y1="385" x2="1175" y2="385" stroke="#1557ff" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)" />
+      
+    <rect x="330" y="645" width="220" height="44" rx="22" fill="#edf3ff" />
+    <text x="348" y="674" font-size="18" font-weight="800" fill="#1557ff" font-family="Arial, Helvetica, sans-serif">Evidence found</text>
+  
+      
+    <rect x="680" y="645" width="160" height="44" rx="22" fill="#fff1f0" />
+    <text x="698" y="674" font-size="18" font-weight="800" fill="#d92d20" font-family="Arial, Helvetica, sans-serif">Mismatch</text>
+  
+      
+    <rect x="970" y="645" width="170" height="44" rx="22" fill="#eef0f4" />
+    <text x="988" y="674" font-size="18" font-weight="800" fill="#5b6472" font-family="Arial, Helvetica, sans-serif">Not found</text>
+  
+    
+</svg>

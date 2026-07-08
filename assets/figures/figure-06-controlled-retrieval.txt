@@ -1,16 +1,15 @@
 Figure: Controlled retrieval architecture
 File: figure-06-controlled-retrieval.png
 Use in deck: Slide 8 technical core
-One-sentence explanation: The technical core is controlled retrieval: search only inside the selected source pack and rank visible Evidence Cards.
+One-sentence explanation: Search only inside the selected source pack.
 Caption: Search only inside the selected source pack.
-Speaking note: This is the technical flex. The product is not generic search; it is a constrained retrieval pipeline built for publication decisions.
+Speaking note: This is the technical flex. The product is a constrained retrieval pipeline built for publication decisions.
 
-Prompt used:
-Use case: infographic-diagram
-Asset type: technical architecture figure, 16:9 landscape, high-resolution
-Primary request: Create a clean controlled-retrieval architecture figure for Lookitup.
-Text: "Controlled retrieval architecture", "Trusted Source Pack", "Local Corpus", "Search Index", "Claim Search", "Evidence Card Ranking", "Visible Evidence", "Search only inside the selected source pack."
-Visual content: Left-to-right technical pipeline with six connected nodes and simple database, document, index, search, ranking, and card icons.
-Style: crisp technical product diagram, editorial SaaS aesthetic, high contrast.
-Colors: white, black, cobalt blue, light gray.
-Constraints: no logos, no watermark, readable typography.
+Regeneration method:
+Deterministic SVG figure rendered to PNG with Chrome headless.
+
+Visual system:
+16:9 landscape, white cards on #f4f6f8 canvas, #0d1117 text, #1557ff evidence blue, #d92d20 mismatch red, #b7791f review amber, #067647 verified green, #d8dee8 borders, one consistent soft shadow.
+
+Reason:
+Text-heavy pitch figures need exact wording and consistent colors. SVG-to-PNG rendering keeps typography, spacing, and shading aligned across the full figure set.

@@ -1,16 +1,15 @@
 Figure: Panel pressure
 File: figure-02-panel-pressure.png
 Use in deck: Slide 2 problem definition
-One-sentence explanation: The journalist panel framed the core pressure as minutes of time and a 100% accuracy standard.
+One-sentence explanation: The deadline is five minutes. The standard is 100%.
 Caption: The deadline is five minutes. The standard is 100%.
-Speaking note: The panel gave us the newsroom equation: speed in minutes, trust at 100%, and no room for unsupported claims.
+Speaking note: The panel gave the newsroom equation: speed in minutes, trust at 100%, and no room for unsupported claims.
 
-Prompt used:
-Use case: infographic-diagram
-Asset type: Google Slides figure reference, 16:9 landscape, high-resolution
-Primary request: Create a clean quote-card infographic for Lookitup showing the journalist panel pressure.
-Text: "The deadline is five minutes. The standard is 100%.", "maximum five minutes", "15 minutes", "100% correct", "clients absolutely trust us 100%", "Journalist panel transcript"
-Visual content: Four large quote cards in a row with simple newsroom icons: clock, article, checkmark, trust badge.
-Style: premium journalism technology infographic, crisp vector-like layout, professional newsroom aesthetic.
-Colors: white, black, cobalt blue, light gray, small signal red on the time-pressure card.
-Constraints: no logos, no watermark, readable typography.
+Regeneration method:
+Deterministic SVG figure rendered to PNG with Chrome headless.
+
+Visual system:
+16:9 landscape, white cards on #f4f6f8 canvas, #0d1117 text, #1557ff evidence blue, #d92d20 mismatch red, #b7791f review amber, #067647 verified green, #d8dee8 borders, one consistent soft shadow.
+
+Reason:
+Text-heavy pitch figures need exact wording and consistent colors. SVG-to-PNG rendering keeps typography, spacing, and shading aligned across the full figure set.

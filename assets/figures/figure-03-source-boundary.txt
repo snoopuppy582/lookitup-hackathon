@@ -1,16 +1,15 @@
 Figure: Source boundary
 File: figure-03-source-boundary.png
 Use in deck: Slide 3 global source gap
-One-sentence explanation: Lookitup wins by controlling the source boundary instead of searching the whole web or generating an unsupported answer.
+One-sentence explanation: The source boundary is the product.
 Caption: The source boundary is the product.
 Speaking note: Google is broad, chatbots are fluent, and Lookitup is source-bound evidence search before publication.
 
-Prompt used:
-Use case: infographic-diagram
-Asset type: Google Slides figure reference, 16:9 landscape, high-resolution
-Primary request: Create a source-boundary comparison figure for Lookitup.
-Text: "The source boundary is the product", "Whole web", "Generated answer", "Trusted sources -> Evidence Cards", "Lookitup shows evidence from sources the journalist chose to trust."
-Visual content: Three columns: scattered web links, chatbot answer bubble, controlled source pack feeding Evidence Cards.
-Style: premium editorial technology infographic, crisp vector-like layout.
-Colors: white, black, cobalt blue, light gray, small red uncertainty marks in the first two columns.
-Constraints: no logos, no watermark, readable typography.
+Regeneration method:
+Deterministic SVG figure rendered to PNG with Chrome headless.
+
+Visual system:
+16:9 landscape, white cards on #f4f6f8 canvas, #0d1117 text, #1557ff evidence blue, #d92d20 mismatch red, #b7791f review amber, #067647 verified green, #d8dee8 borders, one consistent soft shadow.
+
+Reason:
+Text-heavy pitch figures need exact wording and consistent colors. SVG-to-PNG rendering keeps typography, spacing, and shading aligned across the full figure set.
