@@ -32,23 +32,32 @@
         color: var(--ink);
         font-family: Arial, Helvetica, sans-serif;
         letter-spacing: 0;
-        overflow-x: hidden;
       }
 
       body {
         display: grid;
-        gap: 0;
-        padding: 0;
+        gap: 18px;
+        padding: 18px;
+      }
+
+      h1,
+      h2,
+      h3,
+      p,
+      blockquote {
+        margin-top: 0;
       }
 
       .slide {
         position: relative;
         display: grid;
+        grid-template-rows: auto minmax(0, 1fr) auto;
+        gap: 24px;
         width: 1600px;
         height: 900px;
         overflow: hidden;
-        padding: 62px;
-        margin: 0 auto 18px;
+        margin: 0 auto;
+        padding: 54px 64px;
         border: 1px solid var(--border);
         background: var(--surface);
         page-break-after: always;
@@ -59,122 +68,148 @@
         background: var(--ink);
       }
 
-      .slide.dark .eyebrow,
-      .slide.dark .caption,
-      .slide.dark .small {
-        color: #bcc6d5;
+      .topline {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
       }
 
       .eyebrow {
-        margin: 0 0 12px;
+        margin: 0;
         color: var(--blue);
-        font-size: 22px;
+        font-size: 21px;
         font-weight: 900;
         text-transform: uppercase;
       }
 
-      h1,
-      h2,
-      h3,
-      p {
-        margin-top: 0;
+      .dark .eyebrow {
+        color: #8fb0ff;
+      }
+
+      .slide-no {
+        color: var(--muted);
+        font-size: 18px;
+        font-weight: 900;
+      }
+
+      .dark .slide-no,
+      .dark .lead,
+      .dark .footer {
+        color: #bcc6d5;
       }
 
       h1 {
-        max-width: 1220px;
-        margin-bottom: 28px;
-        font-size: 94px;
+        max-width: 1280px;
+        margin-bottom: 0;
+        font-size: 92px;
         line-height: 0.98;
       }
 
       h2 {
-        max-width: 1120px;
-        margin-bottom: 24px;
-        font-size: 64px;
+        max-width: 1160px;
+        margin-bottom: 18px;
+        font-size: 66px;
         line-height: 1.03;
       }
 
       h3 {
         margin-bottom: 10px;
-        font-size: 30px;
+        font-size: 31px;
         line-height: 1.15;
       }
 
       .lead {
-        max-width: 920px;
+        max-width: 980px;
+        margin-bottom: 0;
         color: var(--muted);
         font-size: 30px;
+        font-weight: 700;
         line-height: 1.3;
       }
 
-      .dark .lead {
-        color: #dce3ef;
+      .body {
+        min-height: 0;
       }
 
-      .brand {
-        position: absolute;
-        left: 62px;
-        bottom: 46px;
-        display: flex;
-        align-items: center;
-        gap: 14px;
-        font-size: 24px;
-        font-weight: 900;
+      .center {
+        align-self: center;
       }
 
-      .mark {
+      .two {
         display: grid;
-        place-items: center;
-        width: 48px;
-        height: 48px;
-        color: #ffffff;
-        background: var(--blue);
-        border-radius: 8px;
-      }
-
-      .two-col {
-        display: grid;
-        grid-template-columns: 0.92fr 1.08fr;
-        gap: 46px;
+        grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+        gap: 44px;
         align-items: center;
       }
 
-      .visual {
+      .figure {
         width: 100%;
-        max-height: 640px;
+        max-height: 520px;
         object-fit: contain;
         border: 1px solid var(--border);
         border-radius: 8px;
         background: #ffffff;
       }
 
+      .figure.large {
+        max-height: 590px;
+      }
+
+      .caption {
+        margin: 10px 0 0;
+        color: var(--muted);
+        font-size: 18px;
+        font-weight: 800;
+      }
+
+      .card-grid,
       .quote-grid,
       .stat-grid,
-      .stat-stack,
-      .loop-grid,
       .roadmap-grid {
         display: grid;
         gap: 18px;
       }
 
+      .quote-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .stat-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .roadmap-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .card,
       .quote-card,
       .stat-card,
-      .loop-card,
-      .evidence-card,
       .roadmap-card,
-      .team-card {
+      .demo-panel,
+      .evidence-card {
         border: 1px solid var(--border);
         border-radius: 8px;
         background: #ffffff;
       }
 
-      .quote-card {
-        padding: 28px;
+      .card,
+      .quote-card,
+      .stat-card,
+      .roadmap-card,
+      .demo-panel,
+      .evidence-card {
+        padding: 24px;
       }
 
       .quote-card strong {
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
         color: var(--blue);
         font-size: 34px;
       }
@@ -185,92 +220,70 @@
         font-weight: 800;
       }
 
-      .stat-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      .stat-stack {
-        grid-template-columns: 1fr;
-      }
-
-      .stat-card {
-        min-height: 210px;
-        padding: 26px;
-      }
-
       .stat-card strong {
         display: block;
-        margin-bottom: 14px;
+        margin-bottom: 12px;
         color: var(--blue);
         font-size: 58px;
         line-height: 1;
       }
 
-      .stat-card span {
+      .stat-card span,
+      .card p,
+      .roadmap-card li,
+      .demo-panel p,
+      .evidence-card p {
         color: var(--muted);
-        font-size: 24px;
+        font-size: 23px;
         font-weight: 800;
-        line-height: 1.25;
+        line-height: 1.35;
       }
 
-      .loop-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      .loop-card {
-        min-height: 250px;
-        padding: 28px;
-      }
-
-      .loop-number {
-        display: grid;
-        place-items: center;
-        width: 56px;
-        height: 56px;
-        margin-bottom: 20px;
-        color: #ffffff;
-        background: var(--blue);
-        border-radius: 8px;
-        font-size: 26px;
+      .badge {
+        display: inline-flex;
+        width: fit-content;
+        min-height: 32px;
+        align-items: center;
+        padding: 0 11px;
+        border-radius: 999px;
+        font-size: 14px;
         font-weight: 900;
       }
 
-      .demo-window {
+      .badge.red {
+        color: var(--red);
+        background: var(--red-soft);
+      }
+
+      .badge.amber {
+        color: var(--amber);
+        background: var(--amber-soft);
+      }
+
+      .badge.green {
+        color: var(--green);
+        background: var(--green-soft);
+      }
+
+      .demo-grid {
         display: grid;
-        grid-template-columns: 360px 1fr;
+        grid-template-columns: 360px minmax(0, 1fr);
         gap: 18px;
-        min-height: 560px;
         padding: 20px;
         border: 1px solid var(--border);
         border-radius: 8px;
         background: var(--canvas);
       }
 
-      .source-pack,
-      .claim-box {
-        border: 1px solid var(--border);
-        border-radius: 8px;
-        background: #ffffff;
-        padding: 24px;
-      }
-
-      .source-pack p,
-      .claim-box p,
-      .caption,
-      .small {
-        color: var(--muted);
-        line-height: 1.35;
-      }
-
-      .claim-text {
+      .claim {
         margin: 18px 0;
         padding: 18px;
         border: 1px solid var(--border);
         border-radius: 8px;
         background: #fbfcff;
-        font-size: 30px;
+        font-size: 32px;
         font-weight: 900;
-        line-height: 1.22;
+        line-height: 1.2;
       }
 
       .button {
@@ -285,85 +298,16 @@
         font-weight: 900;
       }
 
-      .evidence-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 18px;
-        margin-top: 28px;
-      }
-
-      .evidence-card {
-        min-height: 280px;
-        padding: 22px;
-      }
-
-      .badge {
-        display: inline-flex;
-        width: fit-content;
-        min-height: 30px;
-        align-items: center;
-        padding: 0 10px;
-        border-radius: 999px;
-        font-size: 14px;
-        font-weight: 900;
-      }
-
-      .badge.red {
-        color: var(--red);
-        background: var(--red-soft);
-      }
-
-      .badge.green {
-        color: var(--green);
-        background: var(--green-soft);
-      }
-
-      .badge.amber {
-        color: var(--amber);
-        background: var(--amber-soft);
-      }
-
       .evidence-card blockquote {
         margin: 18px 0;
-        font-size: 25px;
+        font-size: 26px;
         font-weight: 900;
-        line-height: 1.24;
-      }
-
-      .architecture {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 14px;
-        align-items: center;
-      }
-
-      .arch-step {
-        min-height: 160px;
-        padding: 20px;
-        border: 1px solid var(--border);
-        border-radius: 8px;
-        background: #ffffff;
-      }
-
-      .arch-step strong {
-        display: block;
-        margin-bottom: 8px;
-        color: var(--blue);
-        font-size: 22px;
-      }
-
-      .roadmap-grid {
-        grid-template-columns: repeat(4, 1fr);
-      }
-
-      .roadmap-card {
-        min-height: 300px;
-        padding: 24px;
+        line-height: 1.22;
       }
 
       .roadmap-card strong {
         display: block;
-        margin-bottom: 18px;
+        margin-bottom: 14px;
         color: var(--blue);
         font-size: 30px;
       }
@@ -371,44 +315,31 @@
       ul {
         margin: 0;
         padding-left: 22px;
-        color: var(--muted);
-        font-size: 23px;
-        font-weight: 800;
-        line-height: 1.45;
       }
 
-      .team-card {
-        position: absolute;
-        right: 62px;
-        bottom: 46px;
-        width: 600px;
-        padding: 22px;
-      }
-
-      .team-card p {
-        margin-bottom: 0;
-        color: var(--muted);
-        font-size: 21px;
-        font-weight: 800;
-      }
-
-      .figure-caption {
-        margin: 12px 0 0;
-        color: var(--muted);
-        font-size: 18px;
-        font-weight: 800;
-      }
-
-      .footer-line {
-        position: absolute;
-        left: 62px;
-        right: 62px;
-        bottom: 42px;
+      .footer {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         color: var(--muted);
         font-size: 18px;
-        font-weight: 800;
+        font-weight: 900;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .mark {
+        display: grid;
+        place-items: center;
+        width: 48px;
+        height: 48px;
+        color: #ffffff;
+        background: var(--blue);
+        border-radius: 8px;
       }
 
       @page {
@@ -417,24 +348,37 @@
       }
 
       @media print {
+        html,
         body {
-          display: block;
+          width: 16in;
+          margin: 0;
           padding: 0;
           background: #ffffff;
+        }
+
+        body {
+          display: block;
         }
 
         .slide {
           width: 16in;
           height: 9in;
+          margin: 0;
           border: 0;
-          box-shadow: none;
+          page-break-after: always;
+          break-after: page;
         }
       }
 
       @media screen {
+        body {
+          overflow-x: hidden;
+        }
+
         .slide {
-          width: min(1600px, calc(100vw - 18px));
+          width: min(1600px, calc(100vw - 36px));
           height: auto;
+          min-height: min(900px, calc((100vw - 36px) * 0.5625));
           aspect-ratio: 16 / 9;
         }
       }
@@ -442,154 +386,211 @@
   </head>
   <body>
     <section class="slide dark" id="slide-01">
-      <p class="eyebrow">Lookitup</p>
-      <h1>Turn doubt into evidence before publishing.</h1>
-      <p class="lead">A trusted-source evidence workspace for journalists before publication.</p>
-      <div class="brand"><span class="mark">L</span> Team 6 · Korea + France</div>
+      <div class="topline">
+        <p class="eyebrow">Lookitup</p>
+        <span class="slide-no">01</span>
+      </div>
+      <div class="body center">
+        <h1>Lookitup creates a source boundary before publication.</h1>
+        <p class="lead">Turn doubt into evidence before publishing.</p>
+      </div>
+      <div class="footer">
+        <div class="brand"><span class="mark">L</span> Team 6 · Korea + France</div>
+        <span>Best Journalistic Project</span>
+      </div>
     </section>
 
-    <section class="slide two-col" id="slide-02">
-      <div>
+    <section class="slide" id="slide-02">
+      <div class="topline">
         <p class="eyebrow">Problem case</p>
-        <h2>A fake visual became news before evidence caught up.</h2>
-        <p class="lead">
-          The Kamchatka snow story shows the failure: a vivid AI-generated claim crossed platforms and newsrooms before
-          the evidence trail was checked.
-        </p>
+        <span class="slide-no">02</span>
       </div>
-      <img class="visual" src="../assets/figures/figure-01-cross-border-fake-visual.png" alt="Cross-border fake visual flow" />
+      <div class="body two">
+        <div>
+          <h2>A fake visual became news.</h2>
+          <p class="lead">The Kamchatka snow claim crossed platforms and newsrooms before the evidence trail was visible.</p>
+        </div>
+        <div>
+          <img class="figure large" src="../assets/figures/figure-01-cross-border-fake-visual.png" alt="Cross-border fake visual flow" />
+          <p class="caption">Figure 1. A claim reached publication before the evidence caught up.</p>
+        </div>
+      </div>
+      <div class="footer"><span>Problem: publication-before-evidence failure</span><span>Kamchatka AI snow case</span></div>
     </section>
 
-    <section class="slide two-col" id="slide-03">
-      <div>
+    <section class="slide" id="slide-03">
+      <div class="topline">
         <p class="eyebrow">Journalist pressure</p>
-        <h2>The deadline is five minutes. The standard is 100%.</h2>
-        <div class="quote-grid">
-          <div class="quote-card"><strong>"maximum five minutes"</strong><span>Helena Pilar Gisbert, AFP</span></div>
-          <div class="quote-card"><strong>"15 minutes"</strong><span>Helena Pilar Gisbert, AFP</span></div>
-          <div class="quote-card"><strong>"clients absolutely trust us 100%"</strong><span>Helena Pilar Gisbert, AFP</span></div>
+        <span class="slide-no">03</span>
+      </div>
+      <div class="body two">
+        <div>
+          <h2>Journalists work in minutes.</h2>
+          <div class="quote-grid">
+            <div class="quote-card"><strong>"maximum five minutes"</strong><span>Helena Pilar Gisbert, AFP</span></div>
+            <div class="quote-card"><strong>"15 minutes"</strong><span>Helena Pilar Gisbert, AFP</span></div>
+            <div class="quote-card"><strong>"clients absolutely trust us 100%"</strong><span>Helena Pilar Gisbert, AFP</span></div>
+          </div>
+        </div>
+        <div>
+          <img class="figure large" src="../assets/figures/figure-02-panel-pressure.png" alt="Panel pressure figure" />
+          <p class="caption">Figure 2. Speed and trust define the newsroom pressure.</p>
         </div>
       </div>
-      <div>
-        <img class="visual" src="../assets/figures/figure-02-panel-pressure.png" alt="Panel pressure figure" />
-        <p class="figure-caption">Figure 2. Panel pressure: fast alerts, fast articles, full trust.</p>
-      </div>
-      <div class="footer-line"><span>Named panel evidence</span><span>AFP · ARTE · RSF</span></div>
+      <div class="footer"><span>Named panel evidence</span><span>AFP · ARTE · RSF</span></div>
     </section>
 
-    <section class="slide two-col" id="slide-04">
-      <div>
+    <section class="slide" id="slide-04">
+      <div class="topline">
         <p class="eyebrow">Source gap</p>
-        <h2>News moves faster than source control.</h2>
-        <div class="stat-stack">
-          <div class="stat-card"><strong>10%</strong><span>global AI chatbot news use in Reuters Institute 2026</span></div>
-          <div class="stat-card"><strong>16%</strong><span>under-35 AI chatbot news use</span></div>
-          <div class="stat-card"><strong>31%</strong><span>AI assistant news answers with serious sourcing problems in EBU/BBC study</span></div>
+        <span class="slide-no">04</span>
+      </div>
+      <div class="body two">
+        <div>
+          <h2>Source control is the missing layer.</h2>
+          <div class="stat-grid">
+            <div class="stat-card"><strong>10%</strong><span>global AI chatbot news use</span></div>
+            <div class="stat-card"><strong>16%</strong><span>under-35 AI news use</span></div>
+            <div class="stat-card"><strong>31%</strong><span>serious sourcing issues</span></div>
+          </div>
+        </div>
+        <div>
+          <img class="figure large" src="../assets/figures/figure-03-source-boundary.png" alt="Trusted source boundary figure" />
+          <p class="caption">Figure 3. Lookitup narrows verification to trusted sources.</p>
         </div>
       </div>
-      <div>
-        <img class="visual" src="../assets/figures/figure-03-source-boundary.png" alt="Trusted source boundary figure" />
-        <p class="figure-caption">Figure 3. Lookitup narrows verification to trusted sources.</p>
-      </div>
+      <div class="footer"><span>Source boundary before publication</span><span>Reuters Institute · EBU/BBC</span></div>
     </section>
 
-    <section class="slide two-col" id="slide-05">
-      <div>
+    <section class="slide" id="slide-05">
+      <div class="topline">
         <p class="eyebrow">Solution</p>
-        <h2>Lookitup turns trusted sources into a claim-checking workspace.</h2>
-        <p class="lead">The product does one thing on stage: it finds source-bound Evidence Cards for one doubtful claim.</p>
+        <span class="slide-no">05</span>
       </div>
-      <img class="visual" src="../assets/figures/figure-04-core-loop.png" alt="Lookitup core loop" />
+      <div class="body two">
+        <div>
+          <h2>Lookitup creates the source boundary.</h2>
+          <div class="card-grid">
+            <div class="card"><h3>Select sources</h3><p>The newsroom chooses the trusted pack before the deadline.</p></div>
+            <div class="card"><h3>Search claim</h3><p>The journalist checks one doubtful sentence inside that boundary.</p></div>
+            <div class="card"><h3>Read evidence</h3><p>Evidence Cards show quote, source, date, and link.</p></div>
+          </div>
+        </div>
+        <div>
+          <img class="figure large" src="../assets/figures/figure-04-core-loop.png" alt="Lookitup core loop" />
+          <p class="caption">Figure 4. One source pack. One claim. Visible evidence.</p>
+        </div>
+      </div>
+      <div class="footer"><span>Product core: source-bound evidence search</span><span>Live demo next</span></div>
     </section>
 
     <section class="slide" id="slide-06">
-      <p class="eyebrow">Live demo</p>
-      <h2>One claim moves through one source boundary.</h2>
-      <div class="demo-window">
-        <div class="source-pack">
-          <h3>Breaking News + Fact-Check Pack</h3>
-          <p>OhmyNews Fact Check<br />OhmyNews follow-up<br />AFP Fact Check<br />Local fallback corpus</p>
-        </div>
-        <div class="claim-box">
-          <h3>Claim before publication</h3>
-          <div class="claim-text">Kamchatka snow reached the height of a 10-story apartment building.</div>
-          <div class="button">Search trusted sources</div>
+      <div class="topline">
+        <p class="eyebrow">Live demo</p>
+        <span class="slide-no">06</span>
+      </div>
+      <div class="body center">
+        <h2>One claim enters.</h2>
+        <div class="demo-grid">
+          <div class="demo-panel">
+            <h3>Breaking News + Fact-Check Pack</h3>
+            <p>OhmyNews Fact Check<br />OhmyNews follow-up<br />AFP Fact Check<br />Local fallback corpus</p>
+          </div>
+          <div class="demo-panel">
+            <h3>Claim before publication</h3>
+            <div class="claim">Kamchatka snow reached the height of a 10-story apartment building.</div>
+            <div class="button">Search trusted sources</div>
+          </div>
         </div>
       </div>
+      <div class="footer"><span>Action: search inside the selected source pack</span><span>Demo time: seconds</span></div>
     </section>
 
     <section class="slide" id="slide-07">
-      <p class="eyebrow">Demo result</p>
-      <h2>Evidence Cards turn the claim into a publication decision.</h2>
-      <div class="evidence-grid">
-        <div class="evidence-card">
-          <span class="badge red">Contradicts claim</span>
-          <blockquote>Korean media reported AI-manipulated Kamchatka snow visuals as real.</blockquote>
-          <p class="caption">OhmyNews Fact Check · Jan. 22, 2026</p>
-        </div>
-        <div class="evidence-card">
-          <span class="badge amber">Context</span>
-          <blockquote>KBS and MBC later deleted related AI snow videos.</blockquote>
-          <p class="caption">OhmyNews follow-up · Jan. 23, 2026</p>
-        </div>
-        <div class="evidence-card">
-          <span class="badge red">Contradicts claim</span>
-          <blockquote>Massive Kamchatka snow footage circulating online was AI-generated.</blockquote>
-          <p class="caption">AFP Fact Check · Jan. 29, 2026</p>
+      <div class="topline">
+        <p class="eyebrow">Demo result</p>
+        <span class="slide-no">07</span>
+      </div>
+      <div class="body center">
+        <h2>Evidence Cards appear.</h2>
+        <div class="card-grid">
+          <div class="evidence-card">
+            <span class="badge red">Contradicts claim</span>
+            <blockquote>Korean media reported AI-manipulated Kamchatka snow visuals as real.</blockquote>
+            <p>OhmyNews Fact Check · Jan. 22, 2026</p>
+          </div>
+          <div class="evidence-card">
+            <span class="badge amber">Context</span>
+            <blockquote>KBS and MBC later deleted related AI snow videos.</blockquote>
+            <p>OhmyNews follow-up · Jan. 23, 2026</p>
+          </div>
+          <div class="evidence-card">
+            <span class="badge red">Contradicts claim</span>
+            <blockquote>Massive Kamchatka snow footage circulating online was AI-generated.</blockquote>
+            <p>AFP Fact Check · Jan. 29, 2026</p>
+          </div>
         </div>
       </div>
-      <p class="lead" style="margin-top: 34px;">Decision: Hold before publishing.</p>
+      <div class="footer"><span>Publication call: hold before publishing</span><span>Evidence is visible</span></div>
     </section>
 
-    <section class="slide two-col" id="slide-08">
-      <div>
-        <p class="eyebrow">Newsroom vision</p>
-        <h2>The prototype is search. The product is an evidence workspace.</h2>
-        <p class="lead">Claims, sources, summaries, and editor decisions stay attached before publication.</p>
-      </div>
-      <div>
-        <img class="visual" src="../assets/figures/figure-05-newsroom-workflow.png" alt="Newsroom workflow vision figure" />
-        <p class="figure-caption">Figure 5. The source-pack search loop grows into newsroom workflow.</p>
-      </div>
-    </section>
-
-    <section class="slide two-col" id="slide-09">
-      <div>
+    <section class="slide" id="slide-08">
+      <div class="topline">
         <p class="eyebrow">Technical core</p>
-        <h2>The technical decision is constraint.</h2>
-        <div class="architecture">
-          <div class="arch-step"><strong>Source pack</strong><span class="small">trusted boundary</span></div>
-          <div class="arch-step"><strong>Local corpus</strong><span class="small">demo reliability</span></div>
-          <div class="arch-step"><strong>Claim search</strong><span class="small">one doubtful sentence</span></div>
-          <div class="arch-step"><strong>Evidence Cards</strong><span class="small">quote, source, date, link</span></div>
-          <div class="arch-step"><strong>Decision</strong><span class="small">human publication call</span></div>
+        <span class="slide-no">08</span>
+      </div>
+      <div class="body two">
+        <div>
+          <h2>Controlled retrieval powers the demo.</h2>
+          <div class="card-grid">
+            <div class="card"><h3>Source pack</h3><p>The pack defines the search boundary.</p></div>
+            <div class="card"><h3>Local corpus</h3><p>The demo runs from reliable sample data.</p></div>
+            <div class="card"><h3>Evidence ranking</h3><p>The UI returns source cards, not free text.</p></div>
+          </div>
         </div>
-        <p class="lead" style="margin-top: 34px;">P0 works without generation. Future AI summaries must cite retrieved Evidence Cards.</p>
+        <div>
+          <img class="figure large" src="../assets/figures/figure-06-controlled-retrieval.png" alt="Controlled retrieval architecture figure" />
+          <p class="caption">Figure 6. Controlled retrieval makes the source boundary visible.</p>
+        </div>
       </div>
-      <div>
-        <img class="visual" src="../assets/figures/figure-06-controlled-retrieval.png" alt="Controlled retrieval architecture figure" />
-        <p class="figure-caption">Figure 6. Controlled retrieval makes the source boundary visible.</p>
-      </div>
+      <div class="footer"><span>P0: local source-bound search</span><span>P1 summaries cite Evidence Cards</span></div>
     </section>
 
-    <section class="slide" id="slide-10">
-      <p class="eyebrow">KPI and roadmap</p>
-      <h2>Measure the loop by time-to-evidence.</h2>
-      <div class="roadmap-grid">
-        <div class="roadmap-card"><strong>48h</strong><ul><li>source packs</li><li>local search</li><li>Evidence Cards</li></ul></div>
-        <div class="roadmap-card"><strong>1 month</strong><ul><li>saved packs</li><li>URL/RSS</li><li>PDF support</li></ul></div>
-        <div class="roadmap-card"><strong>3 months</strong><ul><li>newsroom pilot</li><li>editor review</li><li>KPI test</li></ul></div>
-        <div class="roadmap-card"><strong>6 months</strong><ul><li>multilingual packs</li><li>image provenance</li><li>video workflow</li></ul></div>
+    <section class="slide" id="slide-09">
+      <div class="topline">
+        <p class="eyebrow">KPI and roadmap</p>
+        <span class="slide-no">09</span>
       </div>
+      <div class="body two">
+        <div>
+          <h2>The KPI is time-to-evidence.</h2>
+          <div class="roadmap-grid">
+            <div class="roadmap-card"><strong>48h</strong><ul><li>source packs</li><li>local search</li><li>Evidence Cards</li></ul></div>
+            <div class="roadmap-card"><strong>1 month</strong><ul><li>saved packs</li><li>URL/RSS</li><li>PDF</li></ul></div>
+            <div class="roadmap-card"><strong>3 months</strong><ul><li>pilot</li><li>editor review</li><li>KPI test</li></ul></div>
+            <div class="roadmap-card"><strong>6 months</strong><ul><li>multilingual</li><li>provenance</li><li>video</li></ul></div>
+          </div>
+        </div>
+        <div>
+          <img class="figure large" src="../assets/figures/figure-05-newsroom-workflow.png" alt="Newsroom workflow vision figure" />
+          <p class="caption">Figure 5. The source-bound loop grows into newsroom workflow.</p>
+        </div>
+      </div>
+      <div class="footer"><span>Measure: claim to visible evidence</span><span>Next: newsroom pilot</span></div>
     </section>
 
-    <section class="slide dark" id="slide-11">
-      <p class="eyebrow">Close</p>
-      <h1>Lookitup stops unverified claims before they become published news.</h1>
-      <p class="lead">One claim. One trusted source pack. Visible Evidence Cards.</p>
-      <div class="team-card">
-        <h3>Team 6 · Korea + France</h3>
-        <p>Moon Geonho · Oh Sowon · So Chanyoung · Lucas Boucher</p>
+    <section class="slide dark" id="slide-10">
+      <div class="topline">
+        <p class="eyebrow">Close</p>
+        <span class="slide-no">10</span>
+      </div>
+      <div class="body center">
+        <h1>Turn doubt into evidence before publishing.</h1>
+        <p class="lead">Lookitup stops unverified claims before they become published news.</p>
+      </div>
+      <div class="footer">
+        <div class="brand"><span class="mark">L</span> Team 6 · Korea + France</div>
+        <span>One claim · One source boundary · Visible Evidence Cards</span>
       </div>
     </section>
   </body>
