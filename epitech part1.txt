@@ -1,0 +1,510 @@
+﻿epitech part1
+2026.07.08 수 오후 6:30 ・ 55분 21초
+문건호
+
+
+참석자 1 00:00
+So today we of the things in the first acaton made by International Comations and today we are pleased to welcome the three journalists that will be here in order to give you a little insight what is the day-to-day of the journalists or French media or European also media so we'll introduce themselves just a bit after we are just going to begin this presentation by presenting you a bit the limitation of the atom what we will be asking you and how to also deliver the project
+
+참석자 1 00:35
+and the size of the roots and things like this.
+So to begin with it's just 10 years for, to begin with, we have since we'll be the three% in two days that we will be the person in charge.
+Okay so I scared we have even just here and can be also all working for AP Tech.
+The full Acaton will not be in this room.
+This is just for the delivery and for the kickoff the main event will be on the fifth floor on KD4 on the International Road.
+
+참석자 1 01:16
+So for the international students, you know where it is for the French people, it's on cabcat centimeter informational student.
+So if you have any questions or anything on this day to send us directly or a mail on message on will be just on the fixed.
+So this is a bit of planning don't for it to take pictures.
+You will have a pure code at the end in order to get the entire presentation.
+
+참석자 1 01:47
+So today will be the kickoff followed by a one-hour moles conference with the journalists and followed by a Q&a.
+If you have any questions again, the idea of this morning is for you to get your pain points is to get your polymatic and to maybe some stuff, some issues that they have on day-to-day work then the teaming and you are thinking here also some follow-ups on today and tomorrow the follow-ups are optional.
+So if you want an external point of view of your work
+
+참석자 1 02:26
+of your project and your pomatic even you can will be here in order to hand score it.
+If you have some doubts, who will be here?
+If it's a technical issue, if it's even an issue of the project itself, who will be here coming forward with then tomorrow the final delivery is at four in the afternoon by the end the announcement of the winner at the end end of the event sorry at 6.
+
+참석자 1 03:05
+But this is a bit also the condition for the project.
+So a few things very important to gain it has to solve the real world problematic and proven also by numbers that we find online for example.
+So for the French detail, you already know how to do it but for international students, you will have also to show that this polymatic is a global issue.
+You will have to find numbers proving that your polymetic is not existing just for one person but for a large number of ins.
+
+참석자 1 03:43
+You will also to do a technical project.
+So you will have to do a prototype something working.
+I'm not asking you to do a full website or a full application The core feature has to work at the end this is the main thing.
+Don't do the login page, don't do the database or anything.
+I want the main feature to work to prove that it is okay.
+Again, it can be WI into it.
+We even have IoT if you want so it's possible but mostly you can do websites applications.
+
+참석자 1 04:23
+Last thing but very important, the AI and LLM are authorized during this akaton it's only two days so we can allow you at only one condition when you will be presenting your projects.
+We want a little explanation of what was the AI usage in your project Was it 100 persons?
+Was it just maybe for visuals was it for the programming part?
+We just want to get a bit of knowledge in that.
+And tomorrow we have the five-minute presentation
+
+참석자 1 04:57
+it's called the elevator page 5 million to pits project to explain your automatic to say what you have done and to do a to light on the stage here.
+And in order to validate process of participation in the quality of pro, we would like also a link to your sourcecode and asking a little visual again, you can use AI for that but it can be a poster.
+Can you just a little visual about your project
+
+참석자 1 05:28
+and just the timeline because if you want us to communicate in your project to be the we will achieve timeline.
+Do you have any questions for this?
+No so what you are waiting for this time we have three prices and three bars B.
+In these three categories, we will have the best projects.
+So the best project is the one that the jury will say it's the best one not necessarily the best technically or the best the journalism aspects
+
+참석자 1 06:09
+but this is generally something that excites the most all the jury and it will be on this category.
+So that's one the one is the best technical one.
+So maybe it's the most useful, let's say but technically speaking, it's a masterpiece.
+So it will be eligible for this one and the one that is the best journalistic project the one that endscred the best way possible to an issue on the journalists.
+And of course for this edition we have the,
+
+참석자 1 06:47
+the one weon of budgetage that will also leave to the winner sunsets just here.
+So thank you again B for sponsoring New Zealand.
+
+참석자 1 07:04
+So if you are elected on the best project or one of the three awards, you will be able to go to one of these prices.
+So it will be entire set depending of if you win the best project for example or not.
+Thank you again. I think it's a great opportunity for all of us here and also an opportunity for you to get even more motivated to me Something
+
+참석자 1 07:41
+all right no questions about the Akaton itself no okay now we are going to pass a bit more on the conference aspect.
+So we are welcoming three great guests today.
+So we have ELA working for the ISD it's a very non- working agency in France.
+We have also Geette in Ate, mostly a TV channel in Europe and we also working for Fer in France and Europe.
+But the best person to maybe introduce yourself is you maybe in night we can begin with you you can introduce yourself.
+
+참석자 2 08:29
+Hello everybody I'm love I'm a Spanish journalist and I worked for Ifp, which is Aps.
+I don't know if you all know what a news agency is.
+IFA is one of three most important agencies in the world.
+And basically instead of publishing articles for everyone to see, we sell our information and our articles to other media outlets so they can do whatever they want.
+I've been a join us with them for four years and I basically worked in the Spanish department
+
+참석자 2 09:13
+of the agency. Basically my job is receiving the articles that our French and English correspondents sent from all over the world and translating them and adapting them into Spanish for our Spanish clients.
+
+참석자 3 09:33
+Hello everyone, my name is Juliette and I work for RT.
+It is a both German and French TV channel.
+You can find this of course on the TV but also on YouTube website in Instagram I mostly work as a publisher or a website, meaning that every day with a group of eight people both French and German, we select the programs to highlight.
+So I know report directly I get the reports from the reporter and we highlight them on the website.
+
+참석자 4 10:09
+Hello everyone s I've been working with those almost for two years now.
+I'm based in Agar Sal Country in West Afri.
+
+참석자 4 10:32
+The one is that services not only new measures, it's also an NGO and the main goal of the NGO is to promote trans film and to international journalists all around the world.
+So we might most of the time refering some por this but we will also try to help journals.
+
+참석자 4 11:05
+We are also doing some abogsses with the government and with the authorities when we have or when we find the opportunity.
+
+참석자 1 11:15
+Thank you guys for the inclusion.
+
+참석자 1 11:22
+So maybe in a lot you have three different jobs.
+You speaking you are journalists but you all have like, let's say a speciality in all your job.
+So maybe just in order for them to get a bit of more knowledge of what you're doing.
+Can you maybe introduce what you are doing in day-to-day activities?
+Let's say maybe a normal day or yeah, generally speaking, how is it and what maybe really makes the difference between each of your products?
+
+참석자 2 12:05
+Before getting to our daily tests, we wanted to know also what you know about journalism if you consume any media every day, your knowledge in journalism so that we can also adapt how we explain to you everything.
+
+참석자 1 12:26
+Maybe someone wants to take the MI and explain what do you know about Chinesees?
+What's your keywords for that?
+We have KY
+
+참석자 5 12:39
+Hello
+
+참석자 6 12:42
+I'm Eie I'm second gear Master SW and my knowledge about journalism I know mostly social media has taken over everywhere such as ADS, platform, Facebook, Instagram This is mostly like media mostly there's also like the mainstream media like CNN like
+
+참석자 6 13:14
+that's basically the mainstream media.
+So normally, what kind of media do you work with?
+Social media? Mainstream or
+
+참석자 2 13:26
+my media for example it's not going to BroadCast for everyone to see.
+It's just going to work for other clients other media they do have social media accounts that they do post some things on there.
+It's not that big it's not like
+
+참석자 3 13:46
+these ares as I told you, my leader is mostly the TV channel as soon as said, I guess as soon as people watch TV I don't know about you guys but I guess you don't check the news on your TV, on social media.
+So maybe directly in charge.
+So yes, we do have accounts on YouTube and social media and we produce news specifically for these platforms but we're just at the beginning of it
+
+참석자 4 14:31
+maybe to start in the following months.
+I also want to
+
+참석자 1 14:37
+thank you
+
+참석자 1 14:42
+again we have a lot of Koreans also today.
+So maybe one of you can explain how Javas is working in Korea or what's your sources of information for example some of you wants to take the,
+
+참석자 7 15:04
+my name is Korea but at least for me and a lot of my friends, almost all the news and we here and all the, all the things that we read are from social media and a lot of people really don't watch TV.
+
+참석자 8 15:25
+So if I could ask an additional question, what do you think is a thing that traditional media or TV or news outlets like the ones that who are working and can offer to people who already get their news from social media and you know, what would be the upside of
+
+참석자 2 15:50
+I think that policy for my, there's not a lot we can do directly to kind of go for social media because that is not our main goal on, is to work for other media outs but there is maybe a chance of working with the AI, for example, languages and chat blogs and all the things that are their give information so that we can somehow make that the spy file.
+
+참석자 3 16:34
+So your question is, what can TV offer to people who check news on social media?
+Right yes question
+
+참석자 3 16:50
+we can't just report on TV especially because you guys, young people, younger and younger are more on social media so we have to do our job but on these platforms.
+So that would be for now my answer but we'll see five years and 10 years and so on.
+
+참석자 4 17:13
+I mean in France and other countries we have a traditional area so TV, radio, newspaper and Pences
+
+참석자 4 17:48
+not only the case in France like here in some countries in Africa we're starting to see a new Laser that MA five or 10 years
+
+참석자 4 18:13
+but I think we also have to other tasks to how people consume information.
+
+참석자 1 18:23
+Thank you. I was an ABS story about the students coming from Pakistan today also.
+So I suppose you have also a very specific addition with the journalism so I will feel in mind to talk about it.
+
+참석자 9 18:41
+Yeah so I have a question for you guys I think tomorrow for you guys my question is like today in time our generation, I'm really getting the news from social medias.
+So how do you guys make sure that news is authentic?
+Because in social media people use AI and they make fake videos and they use old videos and they have big evidence and wants to use so anyone can go for social media.
+So I want you guys to make sure that we use you guys post but it's authentic
+
+참석자 2 19:17
+what we put out.
+
+참석자 9 19:19
+No you guys put out that. How do you guys verify that
+
+참석자 2 19:25
+the news that they're getting before publishing?
+Well, in my case, it needs to come from reliable sources.
+So during journalism, a journalist's career,
+
+참석자 2 19:46
+you know that you can trust the people that you work with.
+And so if a source calls you and tells you there's been, I don't know a president who has a killer or something like that you won't trust that source because you will all that they have always used and recorded correct things.
+Also with images and videos, it is more and more complicated.
+There are not really anys that can verify 100% of which is real or it's AI.
+
+참석자 2 20:27
+I suppose in the following years we will see maybe some tools revise if it does not exist.
+So it goes back to you as a journalist to really look at things and does this make sense?
+What is the source? Can I see anything that doesn't match and here and then talk with your colleagues as well and just make sure that you trust your own judgment and you make the right call
+
+참석자 3 21:03
+to see like you always have to check on your resources and you can't write a piece of article or publish a video on for source You always have to check with several people, talk about it with your colleagues who have to post to you and be sure of what they publish.
+But I think that this is the way journalism good journalism works.
+You always have to check on your sources.
+
+참석자 3 21:24
+I would say that nowadays most newspapers, the TV, radio or online media also have checking news departments that are super important because their job is to shape on his views, his images and do not like
+
+참석자 4 21:51
+the ways are to check the origin of the sources.
+
+참석자 4 22:09
+I'm going to check, did they ever playing a game against if so, where was that?
+And if they are close again, I'm going to ask people that you have the state on what you see with your eyes and I'm not going to ask one person I'm going to ask one person
+
+참석자 4 22:37
+and I'm going to say okay, my be true and then I have to check with the teams all like family players I can even check with them by personally to see to ask them and you invi him somewhere else.
+Thank you.
+
+참석자 1 22:59
+Okay let's finish with our world tour which is and we still have the French people guys What's your name today?
+Sources GPs How can you consume news media?
+
+참석자 10 23:28
+I use it for an official social media accounts on social media.
+I heard they F2 on Twitter and in Sudan.
+So I know I reliable sources for the use and the fact that those traditional media are on social media it makes it that use is more accessible to young people like me and we decision and most of the time in social media that means we can easily get access to news quickly because we are having the latest buildings and PROs
+
+참석자 3 24:24
+because we represented all nationalities team here maybe you can say a few words about what you a lot of media and MC and a lot of media.
+I want to know whether it's a AI combined with the media is a trend in the future to help you intense testation and some measures to get the resources to write the final news.
+Is it a 1.
+
+참석자 2 25:05
+I mean we will talk about this later but I think all our medias trying to get in the wave of AI and are trying to develop tools, things that can help us and are reliable so that we don't fit our risk.
+But it is something that is still very new following years I'm sure that we're going to see many more tools AI team for now it's starting so starting that we speak
+
+참석자 4 25:49
+we didn't have the choice that either we catch the train or is it so we have to ablish it and we have to, to learn how to work and learn how to gain the time we have because it's definitely a, to the point is how can we use this?
+
+참석자 3 26:19
+So then we're going to go on to the next questions that you have.
+
+참석자 3 26:34
+Okay so what are your ding tasks now that you can reply to?
+Exactly because probably you're okay from media but different media.
+So probably your daily tasks are different especially because you're working with different countries maybe.
+So it might be really interesting about that.
+
+참석자 2 26:52
+Yeah so I mean when you fives, you think about something that those out and reports and does interviews and things like that.
+And in my case that is not going to usually happens.
+I sit at, I'm after behind a computer for seven hours a day.
+It doesn't really stop. I don't work seven hours but it's seven hours at full speed.
+And I in IFP we have a lot of correspondents that are in all parts of the world.
+There are hundreds of them but they are mostly
+
+참석자 2 27:35
+French speaking and English speaking correspondence.
+And I work at the Spanish service.
+So my job is to receive the stories that they send.
+We have a list where everything comes in, everything that they send comes in and we have to decide whether a story is interesting to report to our Spanish-speaking clients.
+And if so, I take it, I read it, I translate it and I adapt it it names, I check if the numbers are good I check if there is a Spanish citation that I can add
+
+참석자 2 28:18
+things like that. And I have to do it as fast as I can and as good as I can because I think it's one agency but there are another two very big agencies that we're always competing with them to try to be the fastest to do, give information.
+And then once I send it, I cos receive it and you can give you whatever you want.
+So I'll send the points to stress.
+
+참석자 3 28:50
+So that's for me. I don't about either.
+I am a publisher meaning that every morning we have a conference at 10 am and we gather all the teams like Culture news and we decide which programs they want to highlight on the website and our social medias.
+It depends first of all on the news of the day.
+For instance, yesterday we decided to push on the Great B France and NS trial but we are not a high news channel
+
+참석자 3 29:23
+and that's the same for our website and platforms.
+So usually we highlight long-term documentaries, Snow Info and Fing TV series and we have to adjust for programmation with Watson TV.
+So this is a very collective group
+
+참석자 4 29:45
+and for Ss, we have a specific scope I would say as the NGO as an NGO, we have comp and so we can only talk about ZING issues.
+So it's mostly to prices the cost about is like Juman is delegating attacks or ability kid, etc, etc.
+
+참석자 4 30:19
+Related to such as PROVI AI, the business Model of the data.
+Also
+
+참석자 4 30:46
+I'm basically some PROs to use to know what's going on for journalists in my area.
+I cannot have the same way for in my area we have like correspondents in each country's because my office is coming like over 45 countries.
+So I have at least one person in the H and then I think also ICH with them every day to see what's happening in those two countries.
+And then I do not really have specifically to be honest but I would say on Monday I have meetings to know what are going to be my new priorities
+
+참석자 4 31:36
+like for instance, on Friday it's going to be a year as a journalist I've been adcted in Vienna in West Africa and he's still in JA now and so we are planning to release something regarding this.
+
+참석자 4 32:01
+I'm also sometimes going not in Snabor I but in neighboring countries.
+
+참석자 1 32:45
+Okay thank you indeed you have three different ways of working and feel also of walking.
+So I think the next question comes to be even more interesting because you surely have very different problematics in your work.
+So this is actually my next question.
+Can you all of three one you can explain to us?
+What's your promatics? What are your pain points?
+What is the difficulties to in your job that is linked maybe to AI or not that's the example here.
+
+참석자 2 33:25
+My difficulties probably not to say my word it's definitely what being quick very as quick as it can because it's workings and usually it's very big stuff like there's an earthquake in Venezuela you have to from the moment's view of the correspondent as well notices that there's an earthquake it has to send mole it and then we have to translate it.
+It has to be as fast as I can maximum five minutes
+
+참석자 2 34:03
+and then an article, the article that's going to have to be 15 minutes.
+So for that because I have to do it in Spanish, usually I have to translate it.
+So AI does help in that way because you're very good translating tos on the Internet.
+I think I use mostly deep.
+I don't like, you know, dele it gives you options so you can adapt your zation however you want.
+But also the second problem I think I have in my work is
+
+참석자 2 34:45
+being truthful and always making sure that the information that I put out is 100% correct.
+Because as a news agency, our clients absolutely trust us 100% and when they receive our information, they are not going to waste time checking if what we write is correct or not.
+They assume that whatever we send them is 100% truthful.
+So in order to keep our clients happy, which allows us to be in business, we have to make sure that it is correct.
+
+참석자 2 35:24
+In that sense, translation sometimes doesn't help like AI translation doesn't help because Deple doesn't know if a certain sentence may have a different meaning.
+It doesn't catch nuances it doesn't translate.
+Sometimes you writely names we have a certain way of writing names and sometimes it doesn't know.
+So it translates narically however it wants and not what it wants.
+So we have to find the equilibrium to use translation correctly
+
+참석자 2 36:10
+so that it helps us be faster than it doesn't aps us in our projective.
+I think that's mainly my comments.
+
+참석자 3 36:31
+As a publisher we are like the last decade before publishing reports and news on social media in our website.
+So we have to be 100% sure of what we published.
+There is a really the part of my job is shaking the names the places control of the information delivery is, is true basically and on a more personal scale, I would say that nowadays I think young journalists but also older journalists, journalists in a way they have to be very equivalent like it is a less and less people only work as
+
+참석자 3 37:13
+a publisher, a reporter you have to be capable of doing everything like filming, preparing the reporting, broadcasting it.
+So I think that this is really a tough part of it because we have less and less time to be precise, efficient platform.
+And I think this is already on maybe one last point.
+I don't know how it is in your countries guy but in South the people have less and less confidence in the traditional media.
+So we have to be like,
+
+참석자 3 37:51
+to pay really attention to this otherwise just like I said before, we will die because if people go for, we take no money will.
+
+참석자 4 38:04
+I think the main problem I think for me is the main challenge is getting access to the information possibly because we do sometimes walk out on sensitive issues and incomplete zones.
+So there are actually there are a lot of zones in my region where I cannot go such as the region it's like a led by a military GA and they are not really
+
+참석자 4 38:55
+so yeah, I cannot call that physically so conflict of world.
+So that's the first point.
+And so I still have to find some alternatives to, to work on those countries because a lot of things are happening there actually I mean jo is something that and so on and so on.
+So I need to have variable sources but at distance.
+So I cannot be them physically I need to speak with them on the phone or my text and there is a,
+
+참석자 4 39:39
+there is a challenge to re, do I trust resources even if I cannot meet or cannot meet them and how can I communicate with, without doing in that job?
+Because like in some countries when you talk with IFP or with a French India or a French NGO, you can be considered as an enemy.
+So you also have a responsibility for, for the people.
+That's the first point. I just want to get some information.
+For instance, three months ago I was in the detention center
+
+참석자 4 40:32
+and I did not have any access or any pictures of the detention center.
+And so we had to find a way to get teachtures or videos of what was happening inside the detention center.
+Yeah that's where the main part of the work begins because we have to think of ways to, to see and to check what the authorities do not want us to check.
+And so we be us we might talk with former detainees we might be using joins
+
+참석자 4 41:15
+we might talk with neighbors closely to this detation center for instance have to think and think about different way to find the information if we don't get access to the field.
+I think that's my main difference is today
+
+참석자 1 41:37
+I think that's a great point here is that to get the contacts I think that's very difficult especially when you go to a country you don't know anyone ply what are your options when you try to find the right contacts and especially if you want to find this person when you are in France for example what's your way to work?
+Do you have someone else from your 20?
+
+참석자 4 42:05
+I mean I think it's kind of this.
+We are lucky because we have correspondents in every countries initial point of contact within the country and hopefully most of the time the consent is so simple person so you can trust me
+
+참석자 4 42:38
+and then with the bonds and the YS do cooling and passing.
+We like just building the, our sources, dealing and treating subjects in some countries where we do not have any access We like building relationships with journalists that still to us in the food.
+We're also talking with civil society, with local NGOs with A passacities and so on and so on and so on.
+
+참석자 4 43:23
+And I've been feeling a change in my way of working and I feel that I'm able to more and more easy.
+You would say only in the last few months the first one was China because I was like dependant I was like depending on my investment and I think that's not a good thing because of the human s you have one so you have better trusting and I think that's not the case for now.
+So it's kind of
+
+참석자 1 44:06
+thank you. I think that you all have one specific factor altogether which is time.
+You all need time when you have to translate, you have to do it in five minutes when you have to find compact is when you take a lot of time and you want to reduce it.
+It's something also for you it takes a lot of time, a lot of human actions.
+So of course I'm going to talk about it AI at what part of AI is impacting your work and at which state currently AI and automatization, for example, in a Togate,
+
+참석자 1 44:43
+better training, better quality project to work competit with AI.
+What's currently the impact of AI in your work?
+Generalist
+
+참석자 2 44:55
+So up until I think a year and a half or two years ago I, when I work I actually didn't use AI at all like I tried to translate everything myself and I didn't ask chat GPT how do I say this what would be a good headline for this article but I find myself that as pressure to be fast I need to actually be friends with AI.
+So I've been visiting a little bit more mostly how I SP to translate things but also if I have, let's say I received a paper from something that happened in Korean politics
+
+참석자 2 45:52
+and it's important but I know that my clients in Latin America are, I'm going to be interested by it but they are not as interested as to receive 800 words on it.
+So I have to cut the, I have to make sure that it's 400 words before I would spend like 10 minutes just reading the article and thinking oh, here this I can just the lead this is not that important and now if I don't have to be very fast, I will maybe ask CGPT or Pilot.
+Hey, can you summarize this in 400 words
+
+참석자 2 46:38
+again if I have an article and I'm trying to translate the headlightight normally in French and in English, the headlines are much shorter and there's a limit of characters that we can use for headlines.
+So what in English takes four words in Spanish it takes 10..
+So we also have to have headlines.
+Sometimes you don't know how to make it shorter.
+So I will ask Chatgt. Hey, can you give me ideas of a headline for this article in four or five words and so that will me.
+
+참석자 2 47:17
+But again, for other things, it does not really work because it doesn't know if the source is reliable.
+It doesn't know if the numbers that I'm giving him are true.
+So sometimes you will ask Jagity to write you a headline and it will add something that wasn't there.
+So you have to be careful in really verifying that each thing that AI gives you does actually make sense.
+Again, in I, they are trying to develop tools and right now they have a translation tool that
+
+참석자 2 48:03
+works okay but it doesn't work as good as Deple.
+So for now I think I'll stick to Deple and also a transcription tool that actually works wonders.
+It is incredible how it can take even an hour of footage and it will give you the exact words perfectly with time stance.
+So with interviews that are very long and we need to move them fast it's actually incredible.
+We can be teach you five minutes instead of an hour and a half and also that does not reporting.
+So for now that is the main impact of
+
+참석자 2 48:45
+AI in my work. But again, we're not at a point where AI could replace me for example, as an editor.
+
+참석자 2 49:19
+Yeah maybe in two years it won't be able to replace me.
+But for now it still needs a human to actually check everything that it does.
+
+참석자 3 49:32
+So for me, I can't replace me for now but we'll see in a few years as a publisher.
+So as I told you, I'm not working for a great news channel but from time to time something happens in the, to react very fast.
+For instance, the death of a president or a psitrist or earthquake in Venezuela a few days ago.
+And in this case we used chat GPT for instance to help us for, in the wordings we use to highlight the programs on our homepage, Wart and other
+
+참석자 3 50:09
+other platforms. We have one internal IA but it is not as efficient and, and useful as JGPT for now.
+So we are in between these two texts but we'll see in a few years when Choos
+
+참석자 4 50:28
+same opinion. I think AI want to replace us because AI cannot talk with your resources and cannot we need trust in relationship with women.
+So I think that's, yeah, that's the main point of being a journalist I mean in the era of AI but still it's helping a lot when we're doing when we are calling INTEL before for instance, the fact that AI can transcript the use is amazing.
+
+참석자 4 51:07
+It also help us to make some research inside the document or even on the web especially when I want to start to work on a specific thematic know everything or other things about mathematic.
+It's also true when I need to translate something which is coming from a language I'm not really familiar with there is still a limit we regarding this like in Africa there are a lot of local no wages.
+
+참석자 4 51:49
+Some people are speaking the colonial languages such as French, English, Spanish and so on and so on.
+But in fact most of the people they are talking their language and they are actually a lot, a lot, a lot of language and most of AI they are not taking those language into account.
+Um. And we're also using AI to develop programs not me personally but I'm going to give you an example in Paris he did with a three journalists the program to s data
+
+참석자 4 52:29
+from our news channel in France to see what those Chinas are talking about and how they are talking about it.
+And the goal was to check if they were like respecting the rules of arising.
+So falsing in France is that basically it will give the same amount of time to different part of views, different opinions and different political parties during election time.
+And we discovered that, I mean, we discovered everybody knew but we proved that one in China was not respected at all this PROVI
+
+참석자 4 53:14
+and we're also using AI to make some programs to SAP that how we are specific case like Sever Sigar situations just one data and then we will analyze them with some programs and even just with our minds.
+The main point regarding ILSM is we do not have any arguments with an external actor O, we do not have any internal solutions.
+So really depending on open the eye to the cloth etc, etc it means we cannot work on those models with sensitive information.
+
+참석자 4 54:07
+So I cannot transcriate everything, I cannot translate everything.
+So I need to know what I can do with AI and what they cannot do with the AII regarding the information.
+
+
+clovanote.naver.com

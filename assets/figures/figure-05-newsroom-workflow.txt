@@ -1,0 +1,16 @@
+Figure: Newsroom workflow vision
+File: figure-05-newsroom-workflow.png
+Use in deck: Slide 7 product vision
+One-sentence explanation: The live prototype is search, and the product vision is a newsroom evidence workspace around drafts, summaries, review, and export.
+Caption: The prototype is search. The product is an evidence workspace.
+Speaking note: This figure lets the team show ambition without pretending every workflow is implemented in the 48-hour build.
+
+Prompt used:
+Use case: productivity-visual
+Asset type: product vision figure, 16:9 landscape, high-resolution
+Primary request: Create a clean newsroom workflow vision figure for Lookitup.
+Text: "Newsroom evidence workspace", "Draft Claim", "Evidence Cards", "Cited Summary", "Editor Review", "Evidence Pack Export", "The prototype is search. The product is an evidence workspace."
+Visual content: Five connected stages: draft panel, evidence card stack, citation summary panel, editor approval panel, export package icon.
+Style: polished editorial SaaS dashboard infographic, professional newsroom design, crisp vector-like layout.
+Colors: white, black, cobalt blue, light gray, small signal red on draft claim marker.
+Constraints: no logos, no watermark, readable typography.

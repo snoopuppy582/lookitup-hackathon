@@ -1,0 +1,16 @@
+Figure: Core loop
+File: figure-04-core-loop.png
+Use in deck: Slide 4 solution
+One-sentence explanation: The prototype proves one workflow: select trusted sources, search a claim, read Evidence Cards, and decide before publishing.
+Caption: One source pack. One claim. Visible evidence.
+Speaking note: This is the whole MVP. The team should show this loop clearly before adding any future workflow.
+
+Prompt used:
+Use case: productivity-visual
+Asset type: product workflow figure, 16:9 landscape, high-resolution
+Primary request: Create a clean workflow diagram for a journalism evidence search tool called Lookitup.
+Text: "Core loop", "Select Source Pack", "Search Claim", "Evidence Cards", "Publish Decision", "Evidence found", "Not found in trusted sources", "One source pack. One claim. Visible evidence."
+Visual content: Horizontal four-step flow with arrows, abstract interface cards, blue check icons, and gray not-found marker.
+Style: polished SaaS dashboard infographic, clean editorial technology design, high contrast.
+Colors: white, black, cobalt blue, light gray.
+Constraints: no logos, no watermark, readable typography.
