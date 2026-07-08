@@ -150,6 +150,7 @@
 
       .quote-grid,
       .stat-grid,
+      .stat-stack,
       .loop-grid,
       .roadmap-grid {
         display: grid;
@@ -186,6 +187,10 @@
 
       .stat-grid {
         grid-template-columns: repeat(3, 1fr);
+      }
+
+      .stat-stack {
+        grid-template-columns: 1fr;
       }
 
       .stat-card {
@@ -387,6 +392,13 @@
         font-weight: 800;
       }
 
+      .figure-caption {
+        margin: 12px 0 0;
+        color: var(--muted);
+        font-size: 18px;
+        font-weight: 800;
+      }
+
       .footer-line {
         position: absolute;
         left: 62px;
@@ -448,26 +460,37 @@
       <img class="visual" src="../assets/figures/figure-01-cross-border-fake-visual.png" alt="Cross-border fake visual flow" />
     </section>
 
-    <section class="slide">
-      <p class="eyebrow">Journalist pressure</p>
-      <h2>The deadline is five minutes. The standard is 100%.</h2>
-      <div class="quote-grid">
-        <div class="quote-card"><strong>"maximum five minutes"</strong><span>Helena Pilar Gisbert, AFP</span></div>
-        <div class="quote-card"><strong>"15 minutes"</strong><span>Helena Pilar Gisbert, AFP</span></div>
-        <div class="quote-card"><strong>"clients absolutely trust us 100%"</strong><span>Helena Pilar Gisbert, AFP</span></div>
+    <section class="slide two-col">
+      <div>
+        <p class="eyebrow">Journalist pressure</p>
+        <h2>The deadline is five minutes. The standard is 100%.</h2>
+        <div class="quote-grid">
+          <div class="quote-card"><strong>"maximum five minutes"</strong><span>Helena Pilar Gisbert, AFP</span></div>
+          <div class="quote-card"><strong>"15 minutes"</strong><span>Helena Pilar Gisbert, AFP</span></div>
+          <div class="quote-card"><strong>"clients absolutely trust us 100%"</strong><span>Helena Pilar Gisbert, AFP</span></div>
+        </div>
+      </div>
+      <div>
+        <img class="visual" src="../assets/figures/figure-02-panel-pressure.png" alt="Panel pressure figure" />
+        <p class="figure-caption">Figure 2. Panel pressure: fast alerts, fast articles, full trust.</p>
       </div>
       <div class="footer-line"><span>Named panel evidence</span><span>AFP · ARTE · RSF</span></div>
     </section>
 
-    <section class="slide">
-      <p class="eyebrow">Source gap</p>
-      <h2>News moves faster than source control.</h2>
-      <div class="stat-grid">
-        <div class="stat-card"><strong>10%</strong><span>global AI chatbot news use in Reuters Institute 2026</span></div>
-        <div class="stat-card"><strong>16%</strong><span>under-35 AI chatbot news use</span></div>
-        <div class="stat-card"><strong>31%</strong><span>AI assistant news answers with serious sourcing problems in EBU/BBC study</span></div>
+    <section class="slide two-col">
+      <div>
+        <p class="eyebrow">Source gap</p>
+        <h2>News moves faster than source control.</h2>
+        <div class="stat-stack">
+          <div class="stat-card"><strong>10%</strong><span>global AI chatbot news use in Reuters Institute 2026</span></div>
+          <div class="stat-card"><strong>16%</strong><span>under-35 AI chatbot news use</span></div>
+          <div class="stat-card"><strong>31%</strong><span>AI assistant news answers with serious sourcing problems in EBU/BBC study</span></div>
+        </div>
       </div>
-      <p class="lead" style="margin-top: 42px;">The newsroom needs a visible source boundary before publication.</p>
+      <div>
+        <img class="visual" src="../assets/figures/figure-03-source-boundary.png" alt="Trusted source boundary figure" />
+        <p class="figure-caption">Figure 3. Lookitup narrows verification to trusted sources.</p>
+      </div>
     </section>
 
     <section class="slide two-col">
@@ -518,17 +541,35 @@
       <p class="lead" style="margin-top: 34px;">Decision: Hold before publishing.</p>
     </section>
 
-    <section class="slide">
-      <p class="eyebrow">Technical core</p>
-      <h2>The technical decision is constraint.</h2>
-      <div class="architecture">
-        <div class="arch-step"><strong>Source pack</strong><span class="small">trusted boundary</span></div>
-        <div class="arch-step"><strong>Local corpus</strong><span class="small">demo reliability</span></div>
-        <div class="arch-step"><strong>Claim search</strong><span class="small">one doubtful sentence</span></div>
-        <div class="arch-step"><strong>Evidence Cards</strong><span class="small">quote, source, date, link</span></div>
-        <div class="arch-step"><strong>Decision</strong><span class="small">human publication call</span></div>
+    <section class="slide two-col">
+      <div>
+        <p class="eyebrow">Newsroom vision</p>
+        <h2>The prototype is search. The product is an evidence workspace.</h2>
+        <p class="lead">Claims, sources, summaries, and editor decisions stay attached before publication.</p>
       </div>
-      <p class="lead" style="margin-top: 42px;">P0 works without generation. Future AI summaries must cite retrieved Evidence Cards.</p>
+      <div>
+        <img class="visual" src="../assets/figures/figure-05-newsroom-workflow.png" alt="Newsroom workflow vision figure" />
+        <p class="figure-caption">Figure 5. The source-pack search loop grows into newsroom workflow.</p>
+      </div>
+    </section>
+
+    <section class="slide two-col">
+      <div>
+        <p class="eyebrow">Technical core</p>
+        <h2>The technical decision is constraint.</h2>
+        <div class="architecture">
+          <div class="arch-step"><strong>Source pack</strong><span class="small">trusted boundary</span></div>
+          <div class="arch-step"><strong>Local corpus</strong><span class="small">demo reliability</span></div>
+          <div class="arch-step"><strong>Claim search</strong><span class="small">one doubtful sentence</span></div>
+          <div class="arch-step"><strong>Evidence Cards</strong><span class="small">quote, source, date, link</span></div>
+          <div class="arch-step"><strong>Decision</strong><span class="small">human publication call</span></div>
+        </div>
+        <p class="lead" style="margin-top: 34px;">P0 works without generation. Future AI summaries must cite retrieved Evidence Cards.</p>
+      </div>
+      <div>
+        <img class="visual" src="../assets/figures/figure-06-controlled-retrieval.png" alt="Controlled retrieval architecture figure" />
+        <p class="figure-caption">Figure 6. Controlled retrieval makes the source boundary visible.</p>
+      </div>
     </section>
 
     <section class="slide">
