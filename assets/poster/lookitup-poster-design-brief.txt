@@ -1,0 +1,87 @@
+LookItUp Poster Design Brief
+
+Purpose
+- One poster for the hackathon presentation requirement.
+- Must include the problem, catchline, group name, and product idea.
+
+Group Name
+- Don't Look Up
+
+Product Name
+- LookItUp
+
+Catchline
+- LookItUp: Turn doubt into evidence.
+
+Core Claim
+- LookItUp creates a source boundary before publication.
+
+Problem
+- Claims move faster than evidence.
+- Main case: AI-generated Kamchatka snow visuals crossed platforms and newsrooms.
+
+Design Elements Extracted From The Reference Image
+- Canvas: 16:9 landscape poster.
+- Background: near-black charcoal.
+- Accent color: soft mint green.
+- Text color: white, with mint highlights for key words.
+- Typography: heavy rounded sans-serif; large, friendly, high-contrast.
+- Logo placement: top-left.
+- Layout: left side carries the main problem sentence; right side carries evidence blocks.
+- Visual rhythm: oversized numbers or short blocks, not paragraphs.
+- Footer: team name on bottom-left, source or project note centered, small page mark bottom-right.
+- Strong whitespace.
+- No decorative illustration.
+- No dense boxes.
+
+Recommended Poster Layout
+- Top-left: LookItUp logo.
+- Top-right: Don't Look Up · Korea & France.
+- Left column: "The problem?" and one large sentence.
+- Right side: three large blocks showing the product flow:
+  1. Claim
+  2. Trusted Sources
+  3. Evidence Cards
+- Bottom center: catchline.
+- Bottom-left: group name.
+- Bottom-right: demo URL or page number.
+
+Poster Copy
+- The problem?
+- Claims move faster than evidence.
+- LookItUp creates a source boundary.
+- Claim -> Trusted Sources -> Evidence Cards
+- LookItUp: Turn doubt into evidence.
+- Don't Look Up · Korea & France
+
+Prompt For Image Generation
+Use case: hackathon poster
+Asset type: 16:9 landscape poster, high-resolution, presentation-ready
+Primary request: Create a clean dark poster for a journalism verification product called "LookItUp" by team "Don't Look Up".
+
+Text must be rendered clearly and exactly:
+Logo text: "LookItUp"
+Group text: "Don't Look Up · Korea & France"
+Problem heading: "The problem?"
+Main problem sentence: "Claims move faster than evidence."
+Product sentence: "LookItUp creates a source boundary."
+Workflow text: "Claim -> Trusted Sources -> Evidence Cards"
+Catchline: "LookItUp: Turn doubt into evidence."
+
+Visual structure:
+Dark charcoal background.
+Top-left product logo with a magnifying glass and check mark.
+Left side: huge problem sentence, with "Claims" and "evidence" highlighted in mint green.
+Right side: three large minimal blocks labeled "Claim", "Trusted Sources", and "Evidence Cards", connected by thin mint arrows.
+Bottom-left: group name.
+Bottom-center: "Source boundary for journalists".
+Bottom-right: small page number "01".
+
+Style:
+Modern hackathon poster, bold rounded sans-serif typography, high contrast, soft mint green accents, white text, clean spacing, no clutter.
+
+Color palette:
+Charcoal #242424, white #F7F7F4, mint #B9F8CC, muted gray #8C8F91.
+
+Avoid:
+Long paragraphs, fake statistics, tiny text, gradients, stock-photo feel, cartoon characters, unreadable microtext, random logos, watermarks.
